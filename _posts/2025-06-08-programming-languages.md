@@ -7,8 +7,7 @@ categories: programming
 
 This is the sample Java code:
 
-{% highlight java linenos mark_lines="1 2" %}
-
+{% highlight java linenos %}
 import java.util.*;
  
 class Palindrome
