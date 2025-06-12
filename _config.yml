@@ -30,7 +30,7 @@ twitter_username: _hephaestus_
 github_username:  anthracitelabs
 
 # Build settings
-theme: minima
+theme: Architect
 plugins:
   - jekyll-feed
 
