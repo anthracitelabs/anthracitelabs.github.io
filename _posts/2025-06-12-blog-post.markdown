@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Blog post 2"
+title: "Blog post"
 date: 2025-06-12 23:25:00 -0000
 categories: build
 ---
