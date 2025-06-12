@@ -30,11 +30,11 @@ twitter_username: _hephaestus_
 github_username:  anthracitelabs
 
 # Build settings
-#theme: minima
-remote_theme: pages-themes/architect@v0.2.0
+theme: minimal
+#remote_theme: pages-themes/architect@v0.2.0
 plugins:
   - jekyll-feed
-  - jekyll-remote-theme
+#  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
