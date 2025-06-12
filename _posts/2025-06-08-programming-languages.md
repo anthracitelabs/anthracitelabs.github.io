@@ -5,8 +5,10 @@ date: 2025-06-08 23:25:00 -0000
 categories: programming
 ---
 
+<head>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6028761499486624"
      crossorigin="anonymous"></script>
+</head>
      
 This is the sample Java code:
 
