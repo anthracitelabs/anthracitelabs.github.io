@@ -5,6 +5,9 @@ date: 2025-06-08 23:25:00 -0000
 categories: programming
 ---
 
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6028761499486624"
+     crossorigin="anonymous"></script>
+     
 This is the sample Java code:
 
 {% highlight java linenos %}
