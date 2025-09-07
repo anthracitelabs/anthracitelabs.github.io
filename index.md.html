@@ -17,15 +17,11 @@ the styling.
 
 
 
-A Bold Start
+Prepare your environment
 ==============================================================
 
-At vero eos et accusamus et iusto odio dignissimos ducimus qui
-blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-et quas molestias excepturi sint occaecati cupiditate non provident,
-similique sunt in culpa qui officia deserunt mollitia animi, id est
-laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita.
-You can specify a custom CSS class for a code block by placing its name after the language name.
+I have jdk-21.0.7 installed and JAVA_HOME defined, also jdk bin folder added to PATH variable. Gradle downloaded
+Android command line tools only downloaded. https://developer.android.com/studio/index.html#command-line-tools-only
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ C
 void insertion_sort(int data[], int length) {
@@ -39,9 +35,15 @@ void insertion_sort(int data[], int length) {
 
 [Day 2](html/tutorial2.md.html) Setting Up Android
 
-Itaque earum rerum hic tenetur a sapiente delectus, ut aut
-reiciendis voluptatibus maiores alias consequatur aut perferendis
-doloribus asperiores repellat.
+Unzip android command line tools into ANDROID SDK folder. List installed and available packages: 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ C
+sdkmanager --list [options]
+[--channel=channel_id] // Channels: 0 (stable), 1 (beta), 2 (dev), or 3 (canary)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
+Execute the following to list stable packages:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ C 
+sdkmanager --list --channel=0
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 More Detail
 ---------------------------------------------------------------
