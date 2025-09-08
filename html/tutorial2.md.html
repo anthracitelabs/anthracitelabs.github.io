@@ -1,91 +1,183 @@
 <meta charset="utf-8" emacsmode="-*- markdown -*-">
 <link rel="stylesheet" href="../css/newsmag.css"/> <!--Based on "Slate" style of Markdeep-->
 
-                          **Android**
-   Tutorial 2: Read This and learn from it
-   Subtitle summary of what you will learn if you read the entire article that is presented here
+                          **Neovim**
+   Step by step Neovim
+   Neovim is a practical and fast text editor for a keyboard centric development. It has plenty of plugins and it is highly customizable.
 
 All is a sample style sheet for an article in a news magazine website, inspired by
 the graphic design of sites such as
 
 [Home](../index.md.html)
 
-Android SDK Installation
-==============================================================
+Follow installation instructions on github page.
+https://github.com/neovim/neovim
 
-At vero eos et accusamus et iusto odio dignissimos ducimus qui
-blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
-et quas molestias excepturi sint occaecati cupiditate non provident,
-similique sunt in culpa qui officia deserunt mollitia animi, id est
-laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita.
-You can specify a custom CSS class for a code block by placing its name after the language name.
+Configuration of Neovim is done through plugins. The first step is to install a plugin manager. lazy.nvim is the recommended plugin manager. Packer was popular before but it is no longer maintained. 
+https://lazy.folke.io/
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ C
-void insertion_sort(int data[], int length) {
-    for (int i = 0; i < length; ++i) {
-       ...
-    }
-}
+As you can find in the documentation there are two options while installing lazy.nvim; structured vs single file (everything in init.lua file). structured is the recommended approach.
+
+~/.config/nvim is your Neovim configuration directory. On Windows, this is usually ~\AppData\Local\nvim. To know the correct path for your system, run :echo stdpath('config').
+
+Configuration
+So for linux inside ~/.config/nvim/init.lua
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  require("config.lazy")
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Itaque earum rerum hic tenetur a sapiente delectus, ut aut
-reiciendis voluptatibus maiores alias consequatur aut perferendis
-doloribus asperiores repellat.
+Then inside ~/.config/nvim/lua/config/lazy.lua
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  -- Bootstrap lazy.nvim
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not (vim.uv or vim.loop).fs_stat(lazypath) then
+  local lazyrepo = "https://github.com/folke/lazy.nvim.git"
+  local out = vim.fn.system({ "git", "clone", "--filter=blob:none", "--branch=stable", lazyrepo, lazypath })
+  if vim.v.shell_error ~= 0 then
+    vim.api.nvim_echo({
+      { "Failed to clone lazy.nvim:\n", "ErrorMsg" },
+      { out, "WarningMsg" },
+      { "\nPress any key to exit..." },
+    }, true, {})
+    vim.fn.getchar()
+    os.exit(1)
+  end
+end
+vim.opt.rtp:prepend(lazypath)
 
-Android Platforms
----------------------------------------------------------------
+-- Make sure to setup `mapleader` and `maplocalleader` before
+-- loading lazy.nvim so that mappings are correct.
+-- This is also a good place to setup other settings (vim.opt)
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
 
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
-ab illo inventore veritatis et quasi architecto beatae vitae dicta
-sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-qui ratione voluptatem sequi nesciunt.
-
-### Sub-subhead
-
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-consectetur, adipisci velit, sed quia non numquam eius modi tempora
-incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-
-
-Android Virtual Device Emulator
-==============================================================
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-aliquip ex ea commodo consequat. Duis aute irure dolor in
-reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-pariatur. 
-
-
-Manifest File
-============================================================== 
-
-Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet,
-consectetur, adipisci velit, sed quia non numquam eius modi tempora
-incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
-
-Details
---------------------------------------------------------------
-
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
-suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+-- Setup lazy.nvim
+require("lazy").setup({
+  spec = {
+    -- import your plugins
+    { import = "plugins" },
+  },
+  -- Configure any other settings here. See the documentation for more details.
+  -- colorscheme that will be used when installing plugins.
+  install = { colorscheme = { "habamax" } },
+  -- automatically check for plugin updates
+  checker = { enabled = true },
+})
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Setting up Real Device
-============================================================== 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, The sunt in culpa qui officia deserunt mollit anim id est
-laborum.
+You can then create your plugin specs in ~/.config/nvim/lua/plugins/. Each file should return a table with the plugins you want to install.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~/.config/nvim
+├── lua
+│   ├── config
+│   │   └── lazy.lua
+│   └── plugins
+│       ├── spec1.lua
+│       ├── **
+│       └── spec2.lua
+└── init.lua
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+init.lua
+-------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-- disable netrw at the very start of your init.lua
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- optionally enable 24-bit colour
+vim.opt.termguicolors = true
+
+vim.cmd("set expandtab")
+vim.cmd("set tabstop=2")
+vim.cmd("set softtabstop=2")
+vim.cmd("set shiftwidth=2")
+vim.g.mapleader = " "
+
+vim.api.nvim_set_option("clipboard", "unnamed")
+
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
+vim.opt.rtp:prepend(lazypath)
+
+local plugins = {
+  { dir = "/home/dev/.config/nvim-data/lazy/tokyonight.nvim", name = "tokyonight", priority = 1000 },
+
+  {
+    dir = "/home/dev/.config/nvim-data/lazy/telescope.nvim", tag = '0.1.5', dependencies = { dir = "/home/dev/.config/nvim-data/lazy/plenary.nvim" }
+  },
+
+  { dir = "/home/dev/.config/nvim-data/lazy/nvim-treesitter", build = ":TSUpdate" },
+
+  { dir = "/home/dev/.config/nvim-data/lazy/nvim-tree.lua" },
+
+  { dir = "/home/dev/.config/nvim-data/lazy/telescope-fzf-native.nvim", build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release' }
+
+}
+
+local opts = {}
+
+require("lazy").setup(plugins, opts)
+
+local builtin = require("telescope.builtin")
+vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
+vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
+
+local telescope = require("telescope")
+telescope.setup({
+	pickers = {
+		live_grep = {
+			file_ignore_patterns = { 'node_modules', '.git', '.venv' },
+			additional_args = function(_)
+				return {"--hidden"}
+			end
+		},
+	
+		find_files = {
+			file_ignore_patterns = { '.git', '.venv' },
+			hidden = true
+		}
+	},
+})
+
+-- empty setup using defaults
+require("nvim-tree").setup()
+
+local api = require("nvim-tree.api")
+vim.keymap.set('n', '<C-g>', api.tree.focus, {})
+vim.keymap.set('n', '<C-h>', api.tree.find_file, {})
+
+-- set color scheme to tokyonight at start
+vim.cmd[[colorscheme tokyonight]]
+
+vim.keymap.set('n', '<space>st', function()
+	vim.cmd.vnew()
+	vim.cmd.term()
+  vim.cmd.wincmd("J")
+	vim.api.nvim_win_set_height(0, 10)
+end)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Some important key bindings:
+
+
+<kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Space</kbd>
+
+
+nvim-tree : Change focus <kbd>Ctrl</kbd> + <kbd>W</kbd> + <kbd>W</kbd>
+
+neo terminal: Back to Normal mode <kbd>Ctrl</kbd> + <kbd>\</kbd> + <kbd>N</kbd>
+
 
                       ---
 
 _Information about the author, copyright, and other information_
 
-[Day 1](tutorial1.md.html) Setting Up Gradle
 
 [Home](../index.md.html)
 
