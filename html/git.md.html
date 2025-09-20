@@ -1,4 +1,4 @@
-<meta charset="utf-8" emacsmode="-*- markdown -*">
+<meta charset="utf-8" emacsmode="-*- markdown -*-">
 <meta id="viewport" name="viewport">
 
 <script type="text/javascript">
@@ -31,13 +31,18 @@
 }());
 </script>
 
-                            **Git notes**
+                          **Git notes**
+  How to overwrite local git branch   
+  Step by step guide to overwrite local git branch
 
-How to overwrite local git branch
-   step by step guide to overwrite local git branch
 
 [Home](../index.md.html)
 
+
+Suppose you have modification in your local repo.
+And there are changes ready to be pulled from remote repo.
+
+![alt text](../github1.png "Github workflow")
 
 Fetch remote state
 ==============================================================
@@ -63,6 +68,8 @@ Local branch hard reset
 
 Overwrite local branch by doing a hard reset via --hard option which resets the index and working tree.
 All changes in tracked files since the commit are discarded. This command resets the current branch's head to the specified commit (in this case, the latest commit of the branch on the remote).
+
+![alt text](../github2.png "Github workflow")
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 git reset --hard origin/branch-name
