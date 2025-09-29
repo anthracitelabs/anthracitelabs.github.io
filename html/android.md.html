@@ -43,23 +43,13 @@ Prepare your environment
 
 I have jdk-21.0.7 installed and JAVA_HOME defined, also jdk bin folder added to PATH variable. Gradle downloaded
 Android command line tools only downloaded. https://developer.android.com/studio/index.html#command-line-tools-only
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ C
-void insertion_sort(int data[], int length) {
-    for (int i = 0; i < length; ++i) {
-       ...
-    }
-}
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
 Unzip android command line tools into ANDROID SDK folder. List installed and available packages: 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ C
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ shell
 sdkmanager --list [options]
 [--channel=channel_id] // Channels: 0 (stable), 1 (beta), 2 (dev), or 3 (canary)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 Execute the following to list stable packages:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ C 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ shell
 sdkmanager --list --channel=0
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
