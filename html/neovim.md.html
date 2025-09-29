@@ -31,32 +31,62 @@
 }());
 </script>
 
-                            **Neovim Tutorial**
+                            **Neovim Basics**
 
 Neovim is a practical and fast text editor for a keyboard centric development. It has plenty of plugins and it is highly customizable.
 
 
 [Home](../index.md.html)
 
+Installation and Basic Usage
+==================================================
+You can either install from the pre-built packages available for your platform on [Neovim Releases page](https://github.com/neovim/neovim/releases/) or choose to install from source via the instructions on [Neovim github page](https://github.com/neovim/neovim?tab=readme-ov-file#install-from-source). 
+Then execute Neovim application to see the following welcome screen.
 
-Follow installation instructions on github page.
-https://github.com/neovim/neovim
+![Neovim welcome screen](../neovim1.png "Neovim welcome screen")
 
-Configuration of Neovim is done through plugins. The first step is to install a plugin manager. lazy.nvim is the recommended plugin manager. Packer was popular before but it is no longer maintained. 
-https://lazy.folke.io/
+Press I to go to the Insert Mode and begin typing just like any other text editor. 
 
-As you can find in the documentation there are two options while installing lazy.nvim; structured vs single file (everything in init.lua file). structured is the recommended approach.
+![Basic editing](../neovim2.png "Basic editing")
 
-~/.config/nvim is your Neovim configuration directory. On Windows, this is usually ~\AppData\Local\nvim. To know the correct path for your system, run :echo stdpath('config').
+Per Neovim documentation "A buffer is a file loaded into memory for editing." There can be multiple buffers at the same time.
+To see available buffers list run buffers command and you will see the only available buffer which is the one we edited above.
 
-Configuration
-So for linux inside ~/.config/nvim/init.lua
+![Available buffers](../neovim3.png "Displaying buffers list")
+
+As you can see in buffers list our buffer does not have a file name yet. We can give it a file name using the file command.
+
+![Naming a buffer](../neovim4.png "Set the current file name for the buffer")
+
+Note that we haven't saved any file yet, so there is no hello.txt in our current working directory. Until we execute the write command (or w for short).
+
+![Writing a file](../neovim5.png "Set the current file name for the buffer")
+
+You can go back and forth between Insert Mode (by pressing I) and Normal Mode (by pressing Esc).
+Commands are executed in Normal Mode. Press Esc to go back to the Normal mode and quit Neovim typing the quit command (or q for short). 
+To reopen the file we just saved you can give the file name as a parameter to nvim command (either in your Linux terminal or Windows command line).
+
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  require("config.lazy")
+nvim hello.txt
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Then inside ~/.config/nvim/lua/config/lazy.lua
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Configuation
+==================================================
+
+Run the following command in Normal Mode to see the Neovim configuration directory for your platform. 
+It is usually ~/.config/nvim for Linux and ~\AppData\Local\nvim for Windows. We will mention it as <CONFIG_DIR> from here on.
+
+![displaying config path](../neovim6.png "Displaying configuration path for Neovim")
+
+
+A plugin manager is needed to be able to install plugins and these plugins are the way to configure Neovim. 
+[lazy.nvim](https://lazy.folke.io/) is the recommended plugin manager. Packer was popular before but it is no longer maintained. 
+As you can find in the [documentation](https://lazy.folke.io/installation) there are two options while installing lazy.nvim; structured vs single file (everything in init.lua file).
+We will do a basic setup putting a single init.lua file under the configuration directory. 
+So create init.lua file under <CONFIG_DIR>/init.lua with the following contents.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ lua
   -- Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
@@ -83,8 +113,7 @@ vim.g.maplocalleader = "\\"
 -- Setup lazy.nvim
 require("lazy").setup({
   spec = {
-    -- import your plugins
-    { import = "plugins" },
+    -- add your plugins here
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
@@ -94,25 +123,13 @@ require("lazy").setup({
 })
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Further Configuration and Add New Plugins
+==================================================
 
-You can then create your plugin specs in ~/.config/nvim/lua/plugins/. Each file should return a table with the plugins you want to install.
+Add New plugins
+----------------------------------
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-~/.config/nvim
-├── lua
-│   ├── config
-│   │   └── lazy.lua
-│   └── plugins
-│       ├── spec1.lua
-│       ├── **
-│       └── spec2.lua
-└── init.lua
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
-init.lua
--------------
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ lua
 -- disable netrw at the very start of your init.lua
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
@@ -192,8 +209,9 @@ vim.keymap.set('n', '<space>st', function()
 end)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Some important key bindings:
 
+Some important key bindings:
+-------------------------------
 
 <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Space</kbd>
 
