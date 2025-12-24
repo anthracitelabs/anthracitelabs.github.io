@@ -46,14 +46,13 @@ SDK folder structure:
 - android_sdk/platform-tools/
 - android_sdk/emulator/ 
 
-!!!
     Recommended settings for environment: (env variables reference : https://developer.android.com/tools/variables#set)
-	ANDROID_HOME - the path to the SDK installation directory
-	ANDROID_USER_HOME - the path to the user preferences directory for tools that are part of the Android SDK. Defaults to $HOME/.android/
+	> ANDROID_HOME - the path to the SDK installation directory
+	> ANDROID_USER_HOME - the path to the user preferences directory for tools that are part of the Android SDK. Defaults to $HOME/.android/
 	add the following to PATH
-	ANDROID_HOME/build-tools/version
-	ANDROID_HOME/cmdline-tools/version/bin
-	ANDROID_HOME/platform-tools 
+	> ANDROID_HOME/build-tools/version
+	> ANDROID_HOME/cmdline-tools/version/bin
+	> ANDROID_HOME/platform-tools 
 
 
 # Sample Libgdx Project Android Compilation
@@ -143,7 +142,6 @@ call adb install -r build\final.apk
 cd..
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-!!! note 
 	to generate key 
 
 	> %JAVABIN%\keytool  -genkey -v -keystore  my-release-key.keystore -alias alias_name  -keyalg RSA -keysize 2048  -validity 10000
