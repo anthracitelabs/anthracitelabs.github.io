@@ -46,25 +46,27 @@ SDK folder structure:
 - android_sdk/platform-tools/
 - android_sdk/emulator/ 
 
-    Recommended settings for environment: (env variables reference : https://developer.android.com/tools/variables#set)
-	> ANDROID_HOME - the path to the SDK installation directory
-	> ANDROID_USER_HOME - the path to the user preferences directory for tools that are part of the Android SDK. Defaults to $HOME/.android/
-	add the following to PATH
-	> ANDROID_HOME/build-tools/version
-	> ANDROID_HOME/cmdline-tools/version/bin
-	> ANDROID_HOME/platform-tools 
+Recommended settings for environment: (env variables reference : https://developer.android.com/tools/variables#set)	
+- ANDROID_HOME - the path to the SDK installation directory
+- ANDROID_USER_HOME - the path to the user preferences directory for tools that are part of the Android SDK. Defaults to $HOME/.android/
+
+add the following to PATH
+- ANDROID_HOME/build-tools/version
+- ANDROID_HOME/cmdline-tools/version/bin
+- ANDROID_HOME/platform-tools 
 
 
 # Sample Libgdx Project Android Compilation
 --------------------------------------------
 
 under project/libs folder download
-* desugar_jdk_libs-2.1.5.jar
-* gdx-1.13.1.jar
-* gdx-backend-android-1.13.1.jar
-* gdx-platform-1.13.1-natives-arm64-v8a.jar
-* gdx-platform-1.13.1-natives-armeabi-v7a.jar
-* gdx-platform-1.13.1-natives-x86_64.jar
+
+- desugar_jdk_libs-2.1.5.jar
+- gdx-1.13.1.jar
+- gdx-backend-android-1.13.1.jar
+- gdx-platform-1.13.1-natives-arm64-v8a.jar
+- gdx-platform-1.13.1-natives-armeabi-v7a.jar
+- gdx-platform-1.13.1-natives-x86_64.jar
 
 Below is the batch script for manual compilation steps
 
@@ -142,51 +144,73 @@ call adb install -r build\final.apk
 cd..
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-	to generate key 
-
-	> %JAVABIN%\keytool  -genkey -v -keystore  my-release-key.keystore -alias alias_name  -keyalg RSA -keysize 2048  -validity 10000
-
+to generate key 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ shell
+%JAVABIN%\keytool  -genkey -v -keystore  my-release-key.keystore -alias alias_name  -keyalg RSA -keysize 2048  -validity 10000
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Installing the app to physical device
 --------------------------------------------------------------
 
 install emulator:
-> sdkmanager "emulator"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ shell
+sdkmanager "emulator"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ 
 
 find a system image using the following command:
-> sdkmanager.bat --list
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ shell
+sdkmanager.bat --list
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 install system image:
-> sdkmanager.bat "system-images;android-30;google_apis_playstore;x86_64"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ shell
+sdkmanager.bat "system-images;android-30;google_apis_playstore;x86_64"
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 list available devices with their ids:
-> avdmanager.bat list device
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ shell
+avdmanager.bat list device
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 create device with name test and device id 39 using the system image we installed above:
-> avdmanager create avd -n test -k "system-images;android-30;google_apis_playstore;x86_64" -d 39
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ shell
+avdmanager create avd -n test -k "system-images;android-30;google_apis_playstore;x86_64" -d 39
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 run the newly created device using emulator tool:
-> emulator @test -skin 768x1280
-
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ shell
+emulator @test -skin 768x1280
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Installation is done via adb command to specific devices..
-> adb install <path/to/your/app.apk>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ shell
+adb install <path/to/your/app.apk>
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Lists all Android Virtual Devices (AVDs) available on your development machine. This command is useful for identifying the emulators you can launch to test your application.
-> emulator -list-avds
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ shell
+emulator -list-avds
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
 Start a specific Android Virtual Device (AVD).
-> emulator -avd avd_name
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ shell
+emulator -avd avd_name
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This command saves the logcat output to logcat.txt in the current directory. The d option dumps the current logcat buffer.
-> adb logcat -d > logcat.txt
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ shell
+adb logcat -d > logcat.txt
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+	
 Use adb qualified names of all apps/packages. If you forget what your qualified app name, but it's installed on the device, then:
-> adb shell pm list packages
-And then
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ shell
+adb shell pm list packages
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-> adb shell monkey -p your.app.name -v 1
+And then
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ shell
+	adb shell monkey -p your.app.name -v 1
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 (to be more precise, this runs the app and sends 1 random input to it)
 
 
@@ -196,11 +220,6 @@ So it is possible to develop an Android application just by using the command li
 
                       ---
 
-Section
-===============================================================================
-
-Subsection
--------------------------------------------------------------------------------
 
 ![alt text](../preview.png "This is a preview Sunny Land assets")
 
