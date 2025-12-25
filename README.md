@@ -1,6 +1,6 @@
 # _Android_
 
-Step by step guide for Android development   
+‘Step by step guide for Android development’
 In this guide you will develop an Android application from scratch - _without_ an IDE and also without Gradle.
 
 ## Prepare your environment
