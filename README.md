@@ -63,7 +63,10 @@ Below is the batch script for manual compilation steps
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ bat
 @echo off
 
-call clean.bat
+rmdir android\bin /S /Q
+rmdir android\build /S /Q
+rmdir core\build /S /Q
+
 SET ANDROID_JAR="%ANDROID_HOME%\platforms\android-36\android.jar"
 
 :: build core module
