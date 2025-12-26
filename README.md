@@ -1,9 +1,9 @@
-# “_Android_”
+# “Android”
 
 ‘Step by step guide for Android development’
 In this guide you will develop an Android application from scratch - _without_ an IDE and also without Gradle.
 
-## Prepare your environment
+## _Prepare your environment_
 
 **I have jdk-21.0.7 installed and JAVA_HOME defined, also jdk bin folder added to PATH variable. Android command line tools only downloaded. https://developer.android.com/studio/index.html#command-line-tools-only
 Unzip android command line tools into ANDROID SDK folder. List installed and available packages:**
