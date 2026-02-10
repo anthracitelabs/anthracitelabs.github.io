@@ -171,7 +171,9 @@ require("nvim-tree").setup()
 local api = require("nvim-tree.api")
 vim.keymap.set('n', '<C-g>', api.tree.focus, {})
 vim.keymap.set('n', '<C-h>', api.tree.find_file, {})
-
+vim.keymap.set('n', '<C-c>', ':!build.bat<CR>', {})
+vim.keymap.set('n', '<C-e>', ':!build\\win32_handmade.exe<CR>', {})
+	
 -- set color scheme to tokyonight at start
 vim.cmd[[colorscheme tokyonight]]
 
