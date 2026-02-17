@@ -1,12 +1,18 @@
 ---
 ---
-
+/*
+ #d1d1c6	(209,209,198)   LIGHT
+ #babfb7	(186,191,183)
+ #a3a8a3	(163,168,163)
+ #898e8c	(137,142,140)
+ #565959	(86,89,89)      DARK
+ * */
 body {
   max-width: 650px;
   margin: 40px auto;
   padding: 0 10px;
   font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color: #444;
+  color: #565959;
 }
 
 h1,
@@ -17,15 +23,15 @@ h3 {
 
 @media (prefers-color-scheme: dark) {
   body {
-    color: #c9d1d9;
-    background: #0d1117;
+    color: #898e8c;
+    background: #d1d1c6;
   }
 
   a:link {
-    color: #58a6ff;
+    color: #a3a8a3;
   }
 
   a:visited {
-    color: #8e96f0;
+    color: #babfb7;
   }
 }
