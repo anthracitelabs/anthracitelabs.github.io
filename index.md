@@ -10,7 +10,7 @@ And it's _really_ perfect!
 
 **Ten declarations, a `@media` block, and one attribute.**
 
-That's how much CSS and HTML it took to turn that [grotesque](https://anthracitelabs.io/) into this finally perfect masterpiece. It's so simple and it still has all the glory:
+That's how much CSS and HTML it took to turn that [old](https://anthracitelabs.io/) into this finally perfect masterpiece. It's so simple and it still has all the glory:
 
 * It's _finally_ lightweight and loads fast;
 * _Finally_ fits on all your screens;
@@ -53,3 +53,4 @@ What I'm saying is that it's so, so simple to make sites easier to read. Website
 Inspired by the geniuses behind ultimate web sites.
 
 This page—that isn't a total content—was licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+
