@@ -8,7 +8,19 @@
     <link rel="stylesheet" href="{{ '/anthracitestyle.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="icon" href="images/miner-lamp.svg">
   </head>
-  <body>
-    {{ content }}
-  </body>
+
+    <div id='header' style='height:50px'>
+        <b>anthracite labs</b>
+    </div>
+
+    <div id='body'>
+        {{ content }}
+    </div>
+
+    <div id='footer' style='height:150px;position: relative;width: 100%;background-color: #333333'>
+        <a href="mailto:anthracitelabs@gmail.com" target="_blank"><img src="images/miner-lamp.svg" alt="mail to us" style="width:42px;height:42px;"></a>
+        <p class="copyright" style='position: absolute;width: 100%;color: #fff;line-height: 40px;font-size: 0.7em;text-align: center;bottom:0;'>
+            copyleft © anthracite labs 2026</p>
+    </div>
+
 </html>

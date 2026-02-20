@@ -2,7 +2,10 @@
 layout: default
 ---
 
-# Anthracite Labs _final_ website.
+# Shaders _tutorials_ and stuff
+
+> "Don't ignore stupid things or you will stay at the mediocre level." 
+> — Brad Hollande
 
 And it's _really_ perfect!
 
