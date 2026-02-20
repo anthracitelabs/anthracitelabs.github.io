@@ -7,7 +7,7 @@ layout: default
 > "Don't ignore stupid things or you will stay at the mediocre level." 
 > — Brad Hollande
 
-And it's _really_ perfect!
+And it's _really_ perfect! Some useful [markdown snippets](https://github.com/markdown-templates/markdown-snippets?tab=readme-ov-file)
 
 ## Seriously, some minimal things are needed to make this perfect.
 
