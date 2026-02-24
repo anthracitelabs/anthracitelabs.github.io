@@ -49,6 +49,17 @@ What I'm saying is that it's so, so simple to make sites easier to read. Website
 > "Don't ignore stupid things or you will stay at the mediocre level." 
 > — Brad Hollande
 
+<kbd>Strg+X</kbd>  
+<kbd>Strg</kbd> + <kbd>X</kbd>  
+<kbd>Or any other text</kbd>
+
+This is a text with <sup>SuperScript</sup>  
+You can use it for footnotes<sup>1</sup>
+
+---
+
+<sup>[1]: See [footnotes](../02-footer/footnotes)</sup>
+
 ---
 
 ## Epilogue
@@ -56,4 +67,10 @@ What I'm saying is that it's so, so simple to make sites easier to read. Website
 Inspired by the geniuses behind ultimate web sites.
 
 This page—that isn't a total content—was licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+
+---
+
+<sup>[1]: Hello World</sup>  
+<sup>[2]: Hello Internet</sup>
+
 
