@@ -7,17 +7,36 @@
     <meta name="description" content="{{ site.description | default: site.github.project_tagline }}">
     <meta name="google-site-verification" content="2sQ67xuPDJcJ7IsuWzK7DUJwk5OOeFN3Ih14e3317Dc" />
     <link rel="stylesheet" href="{{ '/anthracitestyle.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="icon" href="images/miner-lamp.svg">
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" href="images/miner-lamp.svg">
   </head>
 
     <div id='header' style='height:50px'>
         <p align="left"><b>anthracite labs</b></p>
 
-      <p align="center">
-        <strong><a href="#link1">Index</a></strong>
-        <strong><a href="#link2">Projects</a></strong>
-        <strong><a href="#link3">About</a></strong>
-</p>
+      
+	  <nav class="page-menu">
+    
+<ul class="menu" id="menu"><li class="menu-item">
+    <a href="/blog/" class="menu-link">
+      Blog
+    </a>
+  </li><li class="menu-item">
+    <a href="/docs/" class="menu-link">
+      Docs
+    </a>
+  </li><li class="menu-item">
+    <a href="/contribute/" class="menu-link">
+      Contribute
+    </a>
+  </li><li class="menu-item">
+    <a href="/etc/" class="menu-link">
+      etc.
+    </a>
+  </li></ul>
+
+  </nav>
+  
     </div>
 
     <div id='body'>
