@@ -100,3 +100,148 @@ img {
   }
 }
 
+:root {
+    --color-primary: #ffd681;
+    --color-dim-primary: #8f8d8d;
+    --color-dim-bg: #201b37;
+    --color-text: #ffd681;
+    --color-link: #ffd681;
+    --color-bg: #110b2b;
+    --color-logo-full: #ffd681;
+    --color-logo-1: #110b2b;
+    --color-logo-2: #ffd681
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-primary: black;
+        --color-dim-primary: #696969;
+        --color-dim-bg: #fafafa;
+        --color-link: #444;
+        --color-bg: white;
+        --color-logo-full: black;
+        --color-logo-1: black;
+        --color-logo-2: white
+    }
+}
+
+a {
+    color: var(--color-primary);
+    font-weight: 550;
+    padding: 2px
+}
+
+a:hover {
+    color: var(--color-bg);
+    background-color: var(--color-primary);
+    text-decoration: none
+}
+
+*,*::before,*::after {
+    box-sizing: border-box
+}
+
+.page-menu {
+    font-size: 18px;
+    text-align: end;
+    width: 100%;
+    margin-top: 15px
+}
+
+.page-menu a {
+    font-family: ZillaSlab-Regular;
+    text-transform: lowercase
+}
+
+@media (min-width: 680px) {
+    .page-menu {
+        margin-top:74px
+    }
+}
+
+.page-menu .menu-toggle:focus+.menu,.page-menu .menu:hover {
+    display: block;
+    border: 1px solid var(--color-primary)
+}
+
+@media (min-width: 680px) {
+    .page-menu .menu:hover {
+        border:0px;
+        display: flex
+    }
+}
+
+.page-menu .menu {
+    background: var(--color-bg);
+    list-style-type: none;
+    margin: 45px 20px 10px 0;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    overflow: hidden;
+    text-align: start
+}
+
+@media (min-width: 680px) {
+    .page-menu .menu {
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin: 1em 0;
+        position: relative;
+        overflow: visible;
+        width: 100%
+    }
+}
+
+.page-menu .menu-toggle {
+    position: relative;
+    z-index: 10;
+    display: inline-block
+}
+
+.page-menu .menu-toggle span {
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem
+}
+
+@media (min-width: 680px) {
+    .page-menu .menu-toggle {
+        display:none
+    }
+}
+
+.page-menu .menu-item {
+    display: block
+}
+
+@media (min-width: 680px) {
+    .page-menu .menu-item:not(:last-child) {
+        border-right:1px solid var(--color-primary)
+    }
+}
+
+.page-menu .menu-link {
+    color: var(--color-link);
+    cursor: pointer;
+    display: block;
+    flex: none;
+    min-width: 50px;
+    padding: 10px 20px;
+    text-decoration: none
+}
+
+.page-menu .menu-link:hover,.page-menu .menu-link:focus,.page-menu .menu-link.active {
+    color: var(--color-bg);
+    background-color: var(--color-primary);
+    text-decoration: none
+}
+
+@media (min-width: 680px) {
+    .page-menu .menu-link {
+        padding:0px 10px
+    }
+}
