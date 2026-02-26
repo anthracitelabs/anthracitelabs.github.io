@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Shaders _tutorials_ and stuff
+# Shader _tutorials_
 
 
 > "Don't ignore stupid things or you will stay at the mediocre level." 
