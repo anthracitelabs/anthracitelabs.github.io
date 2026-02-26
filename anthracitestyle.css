@@ -16,8 +16,12 @@ body {
   background: #F6F1E9;
 }
 
+blockquote {
+  margin: 50px 50px;
+}
+
 a:link {
-  color: #FF8400;
+  color: #565959;
 }
 
 a:visited {
@@ -25,7 +29,7 @@ a:visited {
 }
 
 h1 {
-  line-height: 3.2;
+  line-height: 2.2;
   text-align: center;
 }
 
@@ -45,11 +49,11 @@ img {
 .button {
    /*border-top: 1px solid #96d1f8;*/
    background: #65a9d7;
-   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
-   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
-   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
-   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
-   background: -o-linear-gradient(top, #3e779d, #65a9d7);
+   background: -webkit-gradient(linear, left top, left bottom, from(#d1d1c6), to(#a3a8a3));
+   background: -webkit-linear-gradient(top, #d1d1c, #a3a8a3);
+   background: -moz-linear-gradient(top, #d1d1c, #a3a8a3);
+   background: -ms-linear-gradient(top, #d1d1c, #a3a8a3);
+   background: -o-linear-gradient(top, #d1d1c, #a3a8a3);
    display: block;
    width: 100%;
    height: 100%;
