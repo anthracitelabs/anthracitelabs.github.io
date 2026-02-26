@@ -12,7 +12,16 @@ body {
   margin: 40px auto;
   padding: 0 10px;
   font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  color: #565959;
+  color: #565959;/*#4F200D;*/
+  background: #F6F1E9;
+}
+
+a:link {
+  color: #FF8400;
+}
+
+a:visited {
+  color: #FFD93D;
 }
 
 h1 {
@@ -27,16 +36,16 @@ h3 {
 
 @media (prefers-color-scheme: dark) {
   body {
-    color: #898e8c;
-    background: #d1d1c6;
+    color: #1b3c53;
+    background: #d2c1b6;
   }
 
   a:link {
-    color: #a3a8a3;
+    color: #456882;
   }
 
   a:visited {
-    color: #babfb7;
+    color: #234c6a;
   }
 }
 
