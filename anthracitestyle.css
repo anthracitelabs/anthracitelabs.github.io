@@ -80,7 +80,7 @@ h3 {
 }
 
 /*div {
-  border: 1px solid green; 
+  border: 0.5px solid black; 
 }*/
 
 img {
@@ -125,7 +125,6 @@ img {
    background: #1b435e;
 }
 
-
 @media (prefers-color-scheme: dark) {
   body {
     color: #1b3c53;
@@ -140,9 +139,6 @@ img {
     color: #234c6a;
   }
 }
-
-
-
 
 .page-menu {
     font-size: 18px;
@@ -201,7 +197,7 @@ img {
 
 .page-menu .menu-toggle {
     position: relative;
-    z-index: 10;
+    /*z-index: 10;*/
     display: inline-block
 }
 
