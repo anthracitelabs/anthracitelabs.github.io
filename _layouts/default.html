@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ site.description | default: site.github.project_tagline }}">
     <meta name="google-site-verification" content="2sQ67xuPDJcJ7IsuWzK7DUJwk5OOeFN3Ih14e3317Dc" />
-    <link rel="stylesheet" href="{{ '/anthracitestyle.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/style.css?v=' | append: site.github.build_revision | relative_url }}">
+	<link rel="stylesheet" href="highlight/styles/tomorrow-night-blue.css">
+	<script src="highlight/highlight.min.js"></script>
+	<script>hljs.highlightAll();</script>
 	<link rel="icon" href="images/miner-lamp.svg">
   </head>
 

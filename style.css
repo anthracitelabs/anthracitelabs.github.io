@@ -1,0 +1,158 @@
+---
+---
+
+:root {
+    --color-hover: gray;
+    --color-link: black;
+    --color-bg: white;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color-hover: gray;
+        --color-link: white;
+        --color-bg: #0d1117;
+    }
+}
+
+body {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 0 10px;
+  font: 18px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  color: #444;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+/*
+div {
+  border: 0.5px solid black;
+}*/
+
+@media (prefers-color-scheme: dark) {
+  body {
+    color: #c9d1d9;
+    background: var(--color-bg);
+  }
+
+  a:link {
+    color: green;
+  }
+
+  a:visited {
+    color: yellow;
+  }
+}
+
+.page-menu a {
+    color: var(--color-hover);
+    font-weight: 550;
+    padding: 2px
+}
+
+.page-menu a:hover {
+    color: var(--color-bg);
+    background-color: var(--color-hover);
+    text-decoration: none
+}
+
+*,*::before,*::after {
+    box-sizing: border-box
+}
+
+.page-menu {
+    font-size: 18px;
+    text-align: end;
+    width: 100%;
+    margin-top: 0px
+}
+
+.page-menu a {
+    font-family: ZillaSlab-Regular;
+    text-transform: lowercase
+}
+
+.page-menu {
+	margin-top: 0px
+}
+
+.page-menu .menu-toggle:focus+.menu,.page-menu .menu:hover {
+    display: block;
+    border: 1px solid var(--color-hover)
+}
+
+.page-menu .menu:hover {
+	border:0px;
+	display: flex
+}
+
+.page-menu .menu {
+    background: var(--color-bg);
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /*position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+    overflow: visible;
+    text-align: start*/
+}
+
+.page-menu .menu {
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	margin: 0;
+	position: relative;
+	overflow: visible;
+	width: 100%
+}
+/*
+.page-menu .menu-toggle {
+    position: relative;
+    z-index: 10;
+    display: inline-block
+}*/
+
+.page-menu .menu-toggle span {
+    display: block;
+    height: 1.5rem;
+    width: 1.5rem
+}
+
+.page-menu .menu-toggle {
+	display:none
+}
+
+.page-menu .menu-item {
+    display: block
+}
+
+.page-menu .menu-item:not(:last-child) {
+	border-right:1px solid var(--color-hover)
+}
+
+.page-menu .menu-link {
+    color: var(--color-link);
+    cursor: pointer;
+    display: block;
+    flex: none;
+    min-width: 50px;
+    padding: 0px 0px;
+    text-decoration: none
+}
+
+.page-menu .menu-link:hover,.page-menu .menu-link:focus,.page-menu .menu-link.active {
+    color: var(--color-bg);
+    background-color: var(--color-hover);
+    text-decoration: none
+}
+
+.page-menu .menu-link {
+	padding:0px 10px
+}
