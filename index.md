@@ -4,13 +4,16 @@ layout: default
 
 # Digital images
 
-
-> "Don't ignore stupid things or you will stay at the mediocre level." 
+> "Don't ignore stupid things or you will stay at the mediocre level."<br>
 > — Brad Hollande
 
-And it's _really_ perfect! Some useful [markdown snippets](https://github.com/markdown-templates/markdown-snippets?tab=readme-ov-file)
+![sea, underwater fish](/images/fish.png){:style="display: block;float: none;margin-left: auto;margin-right: auto;margin-top: 50px;margin-bottom: 50px;"}
 
-## Seriously, some minimal things are needed to make this perfect.
+In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends
+of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to
+eat: it was a [hobbit-hole](https://en.wikipedia.org/wiki/Hobbit#Lifestyle "Hobbit lifestyles"), and that means comfort.
+And it's _really_ perfect!
+
 
 **Ten declarations, a `@media` block, and one attribute.**
 
@@ -26,6 +29,18 @@ That's how much CSS and HTML it took to turn that [old](https://anthracitelabs.i
 ### And guess what:
 
 You never knew it, but it's easy to improve reliability on your site. Here's how.
+
+```js
+#include <stdio.h>
+
+static float foo;
+
+int main()
+{
+	printf("Hello world!|n");
+	return (0);
+}
+```
 
 ## A little more accessibility
 
