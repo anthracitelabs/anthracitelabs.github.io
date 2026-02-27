@@ -30,7 +30,7 @@ That's how much CSS and HTML it took to turn that [old](https://anthracitelabs.i
 
 You never knew it, but it's easy to improve reliability on your site. Here's how.
 
-```js
+~~~C
 #include <stdio.h>
 
 static float foo;
@@ -40,7 +40,7 @@ int main()
 	printf("Hello world!|n");
 	return (0);
 }
-```
+~~~
 
 ## A little more accessibility
 
