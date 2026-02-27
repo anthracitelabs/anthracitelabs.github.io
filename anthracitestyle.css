@@ -59,6 +59,10 @@ body {
   position: relative
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 blockquote {
   margin: 20px 20px;
   text-align: center;
