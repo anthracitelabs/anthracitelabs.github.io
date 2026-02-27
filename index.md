@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Shader _tutorials_
+# Digital images
 
 
 > "Don't ignore stupid things or you will stay at the mediocre level." 
