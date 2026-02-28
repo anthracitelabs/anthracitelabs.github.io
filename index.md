@@ -4,10 +4,9 @@ layout: default
 
 # Digital images
 
-> "Don't ignore stupid things or you will stay at the mediocre level."<br>
-> — Brad Hollande
+<p class="topshort">Android development in pure C style without using Gradle. You don't need to depend on it as it is a heavy bloat requires internet connection and downloads a ton of other dependencies, etc.</p>
 
-![sea, underwater fish](/images/fish.png){:style="display: block;float: none;margin-left: auto;margin-right: auto;margin-top: 50px;margin-bottom: 50px;"}
+![sea, underwater fish](/images/fish.png){:style="width: 80%; display: block;float: none;margin-left: auto;margin-right: auto;margin-top: 50px;margin-bottom: 50px;"}
 
 In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, filled with the ends
 of worms and an oozy smell, nor yet a dry, bare, sandy hole with nothing in it to sit down on or to
@@ -31,13 +30,14 @@ That's how much CSS and HTML it took to turn that [old](https://anthracitelabs.i
 You never knew it, but it's easy to improve reliability on your site. Here's how.
 
 ~~~c
+// You never knew it, but it’s easy to improve reliability on your site. Here’s how.
 #include <stdio.h>
 
 static float foo;
 
 int main()
 {
-  printf("Hello world!|n");
+  printf("Hello world!");
   return (0);
 }
 ~~~
