@@ -4051,143 +4051,6 @@ if (typeof exports === 'object' && typeof module !== 'undefined') { module.expor
 })();
 
     hljs.registerLanguage('cpp', hljsGrammar);
-  })();/*! `glsl` grammar compiled for Highlight.js 11.11.1 */
-  (function(){
-    var hljsGrammar = (function () {
-  'use strict';
-
-  /*
-  Language: GLSL
-  Description: OpenGL Shading Language
-  Author: Sergey Tikhomirov <sergey@tikhomirov.io>
-  Website: https://en.wikipedia.org/wiki/OpenGL_Shading_Language
-  Category: graphics
-  */
-
-  function glsl(hljs) {
-    return {
-      name: 'GLSL',
-      keywords: {
-        keyword:
-          // Statements
-          'break continue discard do else for if return while switch case default '
-          // Qualifiers
-          + 'attribute binding buffer ccw centroid centroid varying coherent column_major const cw '
-          + 'depth_any depth_greater depth_less depth_unchanged early_fragment_tests equal_spacing '
-          + 'flat fractional_even_spacing fractional_odd_spacing highp in index inout invariant '
-          + 'invocations isolines layout line_strip lines lines_adjacency local_size_x local_size_y '
-          + 'local_size_z location lowp max_vertices mediump noperspective offset origin_upper_left '
-          + 'out packed patch pixel_center_integer point_mode points precise precision quads r11f_g11f_b10f '
-          + 'r16 r16_snorm r16f r16i r16ui r32f r32i r32ui r8 r8_snorm r8i r8ui readonly restrict '
-          + 'rg16 rg16_snorm rg16f rg16i rg16ui rg32f rg32i rg32ui rg8 rg8_snorm rg8i rg8ui rgb10_a2 '
-          + 'rgb10_a2ui rgba16 rgba16_snorm rgba16f rgba16i rgba16ui rgba32f rgba32i rgba32ui rgba8 '
-          + 'rgba8_snorm rgba8i rgba8ui row_major sample shared smooth std140 std430 stream triangle_strip '
-          + 'triangles triangles_adjacency uniform varying vertices volatile writeonly',
-        type:
-          'atomic_uint bool bvec2 bvec3 bvec4 dmat2 dmat2x2 dmat2x3 dmat2x4 dmat3 dmat3x2 dmat3x3 '
-          + 'dmat3x4 dmat4 dmat4x2 dmat4x3 dmat4x4 double dvec2 dvec3 dvec4 float iimage1D iimage1DArray '
-          + 'iimage2D iimage2DArray iimage2DMS iimage2DMSArray iimage2DRect iimage3D iimageBuffer '
-          + 'iimageCube iimageCubeArray image1D image1DArray image2D image2DArray image2DMS image2DMSArray '
-          + 'image2DRect image3D imageBuffer imageCube imageCubeArray int isampler1D isampler1DArray '
-          + 'isampler2D isampler2DArray isampler2DMS isampler2DMSArray isampler2DRect isampler3D '
-          + 'isamplerBuffer isamplerCube isamplerCubeArray ivec2 ivec3 ivec4 mat2 mat2x2 mat2x3 '
-          + 'mat2x4 mat3 mat3x2 mat3x3 mat3x4 mat4 mat4x2 mat4x3 mat4x4 sampler1D sampler1DArray '
-          + 'sampler1DArrayShadow sampler1DShadow sampler2D sampler2DArray sampler2DArrayShadow '
-          + 'sampler2DMS sampler2DMSArray sampler2DRect sampler2DRectShadow sampler2DShadow sampler3D '
-          + 'samplerBuffer samplerCube samplerCubeArray samplerCubeArrayShadow samplerCubeShadow '
-          + 'image1D uimage1DArray uimage2D uimage2DArray uimage2DMS uimage2DMSArray uimage2DRect '
-          + 'uimage3D uimageBuffer uimageCube uimageCubeArray uint usampler1D usampler1DArray '
-          + 'usampler2D usampler2DArray usampler2DMS usampler2DMSArray usampler2DRect usampler3D '
-          + 'samplerBuffer usamplerCube usamplerCubeArray uvec2 uvec3 uvec4 vec2 vec3 vec4 void',
-        built_in:
-          // Constants
-          'gl_MaxAtomicCounterBindings gl_MaxAtomicCounterBufferSize gl_MaxClipDistances gl_MaxClipPlanes '
-          + 'gl_MaxCombinedAtomicCounterBuffers gl_MaxCombinedAtomicCounters gl_MaxCombinedImageUniforms '
-          + 'gl_MaxCombinedImageUnitsAndFragmentOutputs gl_MaxCombinedTextureImageUnits gl_MaxComputeAtomicCounterBuffers '
-          + 'gl_MaxComputeAtomicCounters gl_MaxComputeImageUniforms gl_MaxComputeTextureImageUnits '
-          + 'gl_MaxComputeUniformComponents gl_MaxComputeWorkGroupCount gl_MaxComputeWorkGroupSize '
-          + 'gl_MaxDrawBuffers gl_MaxFragmentAtomicCounterBuffers gl_MaxFragmentAtomicCounters '
-          + 'gl_MaxFragmentImageUniforms gl_MaxFragmentInputComponents gl_MaxFragmentInputVectors '
-          + 'gl_MaxFragmentUniformComponents gl_MaxFragmentUniformVectors gl_MaxGeometryAtomicCounterBuffers '
-          + 'gl_MaxGeometryAtomicCounters gl_MaxGeometryImageUniforms gl_MaxGeometryInputComponents '
-          + 'gl_MaxGeometryOutputComponents gl_MaxGeometryOutputVertices gl_MaxGeometryTextureImageUnits '
-          + 'gl_MaxGeometryTotalOutputComponents gl_MaxGeometryUniformComponents gl_MaxGeometryVaryingComponents '
-          + 'gl_MaxImageSamples gl_MaxImageUnits gl_MaxLights gl_MaxPatchVertices gl_MaxProgramTexelOffset '
-          + 'gl_MaxTessControlAtomicCounterBuffers gl_MaxTessControlAtomicCounters gl_MaxTessControlImageUniforms '
-          + 'gl_MaxTessControlInputComponents gl_MaxTessControlOutputComponents gl_MaxTessControlTextureImageUnits '
-          + 'gl_MaxTessControlTotalOutputComponents gl_MaxTessControlUniformComponents '
-          + 'gl_MaxTessEvaluationAtomicCounterBuffers gl_MaxTessEvaluationAtomicCounters '
-          + 'gl_MaxTessEvaluationImageUniforms gl_MaxTessEvaluationInputComponents gl_MaxTessEvaluationOutputComponents '
-          + 'gl_MaxTessEvaluationTextureImageUnits gl_MaxTessEvaluationUniformComponents '
-          + 'gl_MaxTessGenLevel gl_MaxTessPatchComponents gl_MaxTextureCoords gl_MaxTextureImageUnits '
-          + 'gl_MaxTextureUnits gl_MaxVaryingComponents gl_MaxVaryingFloats gl_MaxVaryingVectors '
-          + 'gl_MaxVertexAtomicCounterBuffers gl_MaxVertexAtomicCounters gl_MaxVertexAttribs gl_MaxVertexImageUniforms '
-          + 'gl_MaxVertexOutputComponents gl_MaxVertexOutputVectors gl_MaxVertexTextureImageUnits '
-          + 'gl_MaxVertexUniformComponents gl_MaxVertexUniformVectors gl_MaxViewports gl_MinProgramTexelOffset '
-          // Variables
-          + 'gl_BackColor gl_BackLightModelProduct gl_BackLightProduct gl_BackMaterial '
-          + 'gl_BackSecondaryColor gl_ClipDistance gl_ClipPlane gl_ClipVertex gl_Color '
-          + 'gl_DepthRange gl_EyePlaneQ gl_EyePlaneR gl_EyePlaneS gl_EyePlaneT gl_Fog gl_FogCoord '
-          + 'gl_FogFragCoord gl_FragColor gl_FragCoord gl_FragData gl_FragDepth gl_FrontColor '
-          + 'gl_FrontFacing gl_FrontLightModelProduct gl_FrontLightProduct gl_FrontMaterial '
-          + 'gl_FrontSecondaryColor gl_GlobalInvocationID gl_InstanceID gl_InvocationID gl_Layer gl_LightModel '
-          + 'gl_LightSource gl_LocalInvocationID gl_LocalInvocationIndex gl_ModelViewMatrix '
-          + 'gl_ModelViewMatrixInverse gl_ModelViewMatrixInverseTranspose gl_ModelViewMatrixTranspose '
-          + 'gl_ModelViewProjectionMatrix gl_ModelViewProjectionMatrixInverse gl_ModelViewProjectionMatrixInverseTranspose '
-          + 'gl_ModelViewProjectionMatrixTranspose gl_MultiTexCoord0 gl_MultiTexCoord1 gl_MultiTexCoord2 '
-          + 'gl_MultiTexCoord3 gl_MultiTexCoord4 gl_MultiTexCoord5 gl_MultiTexCoord6 gl_MultiTexCoord7 '
-          + 'gl_Normal gl_NormalMatrix gl_NormalScale gl_NumSamples gl_NumWorkGroups gl_ObjectPlaneQ '
-          + 'gl_ObjectPlaneR gl_ObjectPlaneS gl_ObjectPlaneT gl_PatchVerticesIn gl_Point gl_PointCoord '
-          + 'gl_PointSize gl_Position gl_PrimitiveID gl_PrimitiveIDIn gl_ProjectionMatrix gl_ProjectionMatrixInverse '
-          + 'gl_ProjectionMatrixInverseTranspose gl_ProjectionMatrixTranspose gl_SampleID gl_SampleMask '
-          + 'gl_SampleMaskIn gl_SamplePosition gl_SecondaryColor gl_TessCoord gl_TessLevelInner gl_TessLevelOuter '
-          + 'gl_TexCoord gl_TextureEnvColor gl_TextureMatrix gl_TextureMatrixInverse gl_TextureMatrixInverseTranspose '
-          + 'gl_TextureMatrixTranspose gl_Vertex gl_VertexID gl_ViewportIndex gl_WorkGroupID gl_WorkGroupSize gl_in gl_out '
-          // Functions
-          + 'EmitStreamVertex EmitVertex EndPrimitive EndStreamPrimitive abs acos acosh all any asin '
-          + 'asinh atan atanh atomicAdd atomicAnd atomicCompSwap atomicCounter atomicCounterDecrement '
-          + 'atomicCounterIncrement atomicExchange atomicMax atomicMin atomicOr atomicXor barrier '
-          + 'bitCount bitfieldExtract bitfieldInsert bitfieldReverse ceil clamp cos cosh cross '
-          + 'dFdx dFdy degrees determinant distance dot equal exp exp2 faceforward findLSB findMSB '
-          + 'floatBitsToInt floatBitsToUint floor fma fract frexp ftransform fwidth greaterThan '
-          + 'greaterThanEqual groupMemoryBarrier imageAtomicAdd imageAtomicAnd imageAtomicCompSwap '
-          + 'imageAtomicExchange imageAtomicMax imageAtomicMin imageAtomicOr imageAtomicXor imageLoad '
-          + 'imageSize imageStore imulExtended intBitsToFloat interpolateAtCentroid interpolateAtOffset '
-          + 'interpolateAtSample inverse inversesqrt isinf isnan ldexp length lessThan lessThanEqual log '
-          + 'log2 matrixCompMult max memoryBarrier memoryBarrierAtomicCounter memoryBarrierBuffer '
-          + 'memoryBarrierImage memoryBarrierShared min mix mod modf noise1 noise2 noise3 noise4 '
-          + 'normalize not notEqual outerProduct packDouble2x32 packHalf2x16 packSnorm2x16 packSnorm4x8 '
-          + 'packUnorm2x16 packUnorm4x8 pow radians reflect refract round roundEven shadow1D shadow1DLod '
-          + 'shadow1DProj shadow1DProjLod shadow2D shadow2DLod shadow2DProj shadow2DProjLod sign sin sinh '
-          + 'smoothstep sqrt step tan tanh texelFetch texelFetchOffset texture texture1D texture1DLod '
-          + 'texture1DProj texture1DProjLod texture2D texture2DLod texture2DProj texture2DProjLod '
-          + 'texture3D texture3DLod texture3DProj texture3DProjLod textureCube textureCubeLod '
-          + 'textureGather textureGatherOffset textureGatherOffsets textureGrad textureGradOffset '
-          + 'textureLod textureLodOffset textureOffset textureProj textureProjGrad textureProjGradOffset '
-          + 'textureProjLod textureProjLodOffset textureProjOffset textureQueryLevels textureQueryLod '
-          + 'textureSize transpose trunc uaddCarry uintBitsToFloat umulExtended unpackDouble2x32 '
-          + 'unpackHalf2x16 unpackSnorm2x16 unpackSnorm4x8 unpackUnorm2x16 unpackUnorm4x8 usubBorrow',
-        literal: 'true false'
-      },
-      illegal: '"',
-      contains: [
-        hljs.C_LINE_COMMENT_MODE,
-        hljs.C_BLOCK_COMMENT_MODE,
-        hljs.C_NUMBER_MODE,
-        {
-          className: 'meta',
-          begin: '#',
-          end: '$'
-        }
-      ]
-    };
-  }
-
-  return glsl;
-
-})();
-
-    hljs.registerLanguage('glsl', hljsGrammar);
   })();/*! `gradle` grammar compiled for Highlight.js 11.11.1 */
   (function(){
     var hljsGrammar = (function () {
@@ -4387,6 +4250,306 @@ if (typeof exports === 'object' && typeof module !== 'undefined') { module.expor
 })();
 
     hljs.registerLanguage('gradle', hljsGrammar);
+  })();/*! `java` grammar compiled for Highlight.js 11.11.1 */
+  (function(){
+    var hljsGrammar = (function () {
+  'use strict';
+
+  // https://docs.oracle.com/javase/specs/jls/se15/html/jls-3.html#jls-3.10
+  var decimalDigits = '[0-9](_*[0-9])*';
+  var frac = `\\.(${decimalDigits})`;
+  var hexDigits = '[0-9a-fA-F](_*[0-9a-fA-F])*';
+  var NUMERIC = {
+    className: 'number',
+    variants: [
+      // DecimalFloatingPointLiteral
+      // including ExponentPart
+      { begin: `(\\b(${decimalDigits})((${frac})|\\.)?|(${frac}))` +
+        `[eE][+-]?(${decimalDigits})[fFdD]?\\b` },
+      // excluding ExponentPart
+      { begin: `\\b(${decimalDigits})((${frac})[fFdD]?\\b|\\.([fFdD]\\b)?)` },
+      { begin: `(${frac})[fFdD]?\\b` },
+      { begin: `\\b(${decimalDigits})[fFdD]\\b` },
+
+      // HexadecimalFloatingPointLiteral
+      { begin: `\\b0[xX]((${hexDigits})\\.?|(${hexDigits})?\\.(${hexDigits}))` +
+        `[pP][+-]?(${decimalDigits})[fFdD]?\\b` },
+
+      // DecimalIntegerLiteral
+      { begin: '\\b(0|[1-9](_*[0-9])*)[lL]?\\b' },
+
+      // HexIntegerLiteral
+      { begin: `\\b0[xX](${hexDigits})[lL]?\\b` },
+
+      // OctalIntegerLiteral
+      { begin: '\\b0(_*[0-7])*[lL]?\\b' },
+
+      // BinaryIntegerLiteral
+      { begin: '\\b0[bB][01](_*[01])*[lL]?\\b' },
+    ],
+    relevance: 0
+  };
+
+  /*
+  Language: Java
+  Author: Vsevolod Solovyov <vsevolod.solovyov@gmail.com>
+  Category: common, enterprise
+  Website: https://www.java.com/
+  */
+
+
+  /**
+   * Allows recursive regex expressions to a given depth
+   *
+   * ie: recurRegex("(abc~~~)", /~~~/g, 2) becomes:
+   * (abc(abc(abc)))
+   *
+   * @param {string} re
+   * @param {RegExp} substitution (should be a g mode regex)
+   * @param {number} depth
+   * @returns {string}``
+   */
+  function recurRegex(re, substitution, depth) {
+    if (depth === -1) return "";
+
+    return re.replace(substitution, _ => {
+      return recurRegex(re, substitution, depth - 1);
+    });
+  }
+
+  /** @type LanguageFn */
+  function java(hljs) {
+    const regex = hljs.regex;
+    const JAVA_IDENT_RE = '[\u00C0-\u02B8a-zA-Z_$][\u00C0-\u02B8a-zA-Z_$0-9]*';
+    const GENERIC_IDENT_RE = JAVA_IDENT_RE
+      + recurRegex('(?:<' + JAVA_IDENT_RE + '~~~(?:\\s*,\\s*' + JAVA_IDENT_RE + '~~~)*>)?', /~~~/g, 2);
+    const MAIN_KEYWORDS = [
+      'synchronized',
+      'abstract',
+      'private',
+      'var',
+      'static',
+      'if',
+      'const ',
+      'for',
+      'while',
+      'strictfp',
+      'finally',
+      'protected',
+      'import',
+      'native',
+      'final',
+      'void',
+      'enum',
+      'else',
+      'break',
+      'transient',
+      'catch',
+      'instanceof',
+      'volatile',
+      'case',
+      'assert',
+      'package',
+      'default',
+      'public',
+      'try',
+      'switch',
+      'continue',
+      'throws',
+      'protected',
+      'public',
+      'private',
+      'module',
+      'requires',
+      'exports',
+      'do',
+      'sealed',
+      'yield',
+      'permits',
+      'goto',
+      'when'
+    ];
+
+    const BUILT_INS = [
+      'super',
+      'this'
+    ];
+
+    const LITERALS = [
+      'false',
+      'true',
+      'null'
+    ];
+
+    const TYPES = [
+      'char',
+      'boolean',
+      'long',
+      'float',
+      'int',
+      'byte',
+      'short',
+      'double'
+    ];
+
+    const KEYWORDS = {
+      keyword: MAIN_KEYWORDS,
+      literal: LITERALS,
+      type: TYPES,
+      built_in: BUILT_INS
+    };
+
+    const ANNOTATION = {
+      className: 'meta',
+      begin: '@' + JAVA_IDENT_RE,
+      contains: [
+        {
+          begin: /\(/,
+          end: /\)/,
+          contains: [ "self" ] // allow nested () inside our annotation
+        }
+      ]
+    };
+    const PARAMS = {
+      className: 'params',
+      begin: /\(/,
+      end: /\)/,
+      keywords: KEYWORDS,
+      relevance: 0,
+      contains: [ hljs.C_BLOCK_COMMENT_MODE ],
+      endsParent: true
+    };
+
+    return {
+      name: 'Java',
+      aliases: [ 'jsp' ],
+      keywords: KEYWORDS,
+      illegal: /<\/|#/,
+      contains: [
+        hljs.COMMENT(
+          '/\\*\\*',
+          '\\*/',
+          {
+            relevance: 0,
+            contains: [
+              {
+                // eat up @'s in emails to prevent them to be recognized as doctags
+                begin: /\w+@/,
+                relevance: 0
+              },
+              {
+                className: 'doctag',
+                begin: '@[A-Za-z]+'
+              }
+            ]
+          }
+        ),
+        // relevance boost
+        {
+          begin: /import java\.[a-z]+\./,
+          keywords: "import",
+          relevance: 2
+        },
+        hljs.C_LINE_COMMENT_MODE,
+        hljs.C_BLOCK_COMMENT_MODE,
+        {
+          begin: /"""/,
+          end: /"""/,
+          className: "string",
+          contains: [ hljs.BACKSLASH_ESCAPE ]
+        },
+        hljs.APOS_STRING_MODE,
+        hljs.QUOTE_STRING_MODE,
+        {
+          match: [
+            /\b(?:class|interface|enum|extends|implements|new)/,
+            /\s+/,
+            JAVA_IDENT_RE
+          ],
+          className: {
+            1: "keyword",
+            3: "title.class"
+          }
+        },
+        {
+          // Exceptions for hyphenated keywords
+          match: /non-sealed/,
+          scope: "keyword"
+        },
+        {
+          begin: [
+            regex.concat(/(?!else)/, JAVA_IDENT_RE),
+            /\s+/,
+            JAVA_IDENT_RE,
+            /\s+/,
+            /=(?!=)/
+          ],
+          className: {
+            1: "type",
+            3: "variable",
+            5: "operator"
+          }
+        },
+        {
+          begin: [
+            /record/,
+            /\s+/,
+            JAVA_IDENT_RE
+          ],
+          className: {
+            1: "keyword",
+            3: "title.class"
+          },
+          contains: [
+            PARAMS,
+            hljs.C_LINE_COMMENT_MODE,
+            hljs.C_BLOCK_COMMENT_MODE
+          ]
+        },
+        {
+          // Expression keywords prevent 'keyword Name(...)' from being
+          // recognized as a function definition
+          beginKeywords: 'new throw return else',
+          relevance: 0
+        },
+        {
+          begin: [
+            '(?:' + GENERIC_IDENT_RE + '\\s+)',
+            hljs.UNDERSCORE_IDENT_RE,
+            /\s*(?=\()/
+          ],
+          className: { 2: "title.function" },
+          keywords: KEYWORDS,
+          contains: [
+            {
+              className: 'params',
+              begin: /\(/,
+              end: /\)/,
+              keywords: KEYWORDS,
+              relevance: 0,
+              contains: [
+                ANNOTATION,
+                hljs.APOS_STRING_MODE,
+                hljs.QUOTE_STRING_MODE,
+                NUMERIC,
+                hljs.C_BLOCK_COMMENT_MODE
+              ]
+            },
+            hljs.C_LINE_COMMENT_MODE,
+            hljs.C_BLOCK_COMMENT_MODE
+          ]
+        },
+        NUMERIC,
+        ANNOTATION
+      ]
+    };
+  }
+
+  return java;
+
+})();
+
+    hljs.registerLanguage('java', hljsGrammar);
   })();/*! `makefile` grammar compiled for Highlight.js 11.11.1 */
   (function(){
     var hljsGrammar = (function () {
@@ -4485,6 +4648,451 @@ if (typeof exports === 'object' && typeof module !== 'undefined') { module.expor
 })();
 
     hljs.registerLanguage('makefile', hljsGrammar);
+  })();/*! `python` grammar compiled for Highlight.js 11.11.1 */
+  (function(){
+    var hljsGrammar = (function () {
+  'use strict';
+
+  /*
+  Language: Python
+  Description: Python is an interpreted, object-oriented, high-level programming language with dynamic semantics.
+  Website: https://www.python.org
+  Category: common
+  */
+
+  function python(hljs) {
+    const regex = hljs.regex;
+    const IDENT_RE = /[\p{XID_Start}_]\p{XID_Continue}*/u;
+    const RESERVED_WORDS = [
+      'and',
+      'as',
+      'assert',
+      'async',
+      'await',
+      'break',
+      'case',
+      'class',
+      'continue',
+      'def',
+      'del',
+      'elif',
+      'else',
+      'except',
+      'finally',
+      'for',
+      'from',
+      'global',
+      'if',
+      'import',
+      'in',
+      'is',
+      'lambda',
+      'match',
+      'nonlocal|10',
+      'not',
+      'or',
+      'pass',
+      'raise',
+      'return',
+      'try',
+      'while',
+      'with',
+      'yield'
+    ];
+
+    const BUILT_INS = [
+      '__import__',
+      'abs',
+      'all',
+      'any',
+      'ascii',
+      'bin',
+      'bool',
+      'breakpoint',
+      'bytearray',
+      'bytes',
+      'callable',
+      'chr',
+      'classmethod',
+      'compile',
+      'complex',
+      'delattr',
+      'dict',
+      'dir',
+      'divmod',
+      'enumerate',
+      'eval',
+      'exec',
+      'filter',
+      'float',
+      'format',
+      'frozenset',
+      'getattr',
+      'globals',
+      'hasattr',
+      'hash',
+      'help',
+      'hex',
+      'id',
+      'input',
+      'int',
+      'isinstance',
+      'issubclass',
+      'iter',
+      'len',
+      'list',
+      'locals',
+      'map',
+      'max',
+      'memoryview',
+      'min',
+      'next',
+      'object',
+      'oct',
+      'open',
+      'ord',
+      'pow',
+      'print',
+      'property',
+      'range',
+      'repr',
+      'reversed',
+      'round',
+      'set',
+      'setattr',
+      'slice',
+      'sorted',
+      'staticmethod',
+      'str',
+      'sum',
+      'super',
+      'tuple',
+      'type',
+      'vars',
+      'zip'
+    ];
+
+    const LITERALS = [
+      '__debug__',
+      'Ellipsis',
+      'False',
+      'None',
+      'NotImplemented',
+      'True'
+    ];
+
+    // https://docs.python.org/3/library/typing.html
+    // TODO: Could these be supplemented by a CamelCase matcher in certain
+    // contexts, leaving these remaining only for relevance hinting?
+    const TYPES = [
+      "Any",
+      "Callable",
+      "Coroutine",
+      "Dict",
+      "List",
+      "Literal",
+      "Generic",
+      "Optional",
+      "Sequence",
+      "Set",
+      "Tuple",
+      "Type",
+      "Union"
+    ];
+
+    const KEYWORDS = {
+      $pattern: /[A-Za-z]\w+|__\w+__/,
+      keyword: RESERVED_WORDS,
+      built_in: BUILT_INS,
+      literal: LITERALS,
+      type: TYPES
+    };
+
+    const PROMPT = {
+      className: 'meta',
+      begin: /^(>>>|\.\.\.) /
+    };
+
+    const SUBST = {
+      className: 'subst',
+      begin: /\{/,
+      end: /\}/,
+      keywords: KEYWORDS,
+      illegal: /#/
+    };
+
+    const LITERAL_BRACKET = {
+      begin: /\{\{/,
+      relevance: 0
+    };
+
+    const STRING = {
+      className: 'string',
+      contains: [ hljs.BACKSLASH_ESCAPE ],
+      variants: [
+        {
+          begin: /([uU]|[bB]|[rR]|[bB][rR]|[rR][bB])?'''/,
+          end: /'''/,
+          contains: [
+            hljs.BACKSLASH_ESCAPE,
+            PROMPT
+          ],
+          relevance: 10
+        },
+        {
+          begin: /([uU]|[bB]|[rR]|[bB][rR]|[rR][bB])?"""/,
+          end: /"""/,
+          contains: [
+            hljs.BACKSLASH_ESCAPE,
+            PROMPT
+          ],
+          relevance: 10
+        },
+        {
+          begin: /([fF][rR]|[rR][fF]|[fF])'''/,
+          end: /'''/,
+          contains: [
+            hljs.BACKSLASH_ESCAPE,
+            PROMPT,
+            LITERAL_BRACKET,
+            SUBST
+          ]
+        },
+        {
+          begin: /([fF][rR]|[rR][fF]|[fF])"""/,
+          end: /"""/,
+          contains: [
+            hljs.BACKSLASH_ESCAPE,
+            PROMPT,
+            LITERAL_BRACKET,
+            SUBST
+          ]
+        },
+        {
+          begin: /([uU]|[rR])'/,
+          end: /'/,
+          relevance: 10
+        },
+        {
+          begin: /([uU]|[rR])"/,
+          end: /"/,
+          relevance: 10
+        },
+        {
+          begin: /([bB]|[bB][rR]|[rR][bB])'/,
+          end: /'/
+        },
+        {
+          begin: /([bB]|[bB][rR]|[rR][bB])"/,
+          end: /"/
+        },
+        {
+          begin: /([fF][rR]|[rR][fF]|[fF])'/,
+          end: /'/,
+          contains: [
+            hljs.BACKSLASH_ESCAPE,
+            LITERAL_BRACKET,
+            SUBST
+          ]
+        },
+        {
+          begin: /([fF][rR]|[rR][fF]|[fF])"/,
+          end: /"/,
+          contains: [
+            hljs.BACKSLASH_ESCAPE,
+            LITERAL_BRACKET,
+            SUBST
+          ]
+        },
+        hljs.APOS_STRING_MODE,
+        hljs.QUOTE_STRING_MODE
+      ]
+    };
+
+    // https://docs.python.org/3.9/reference/lexical_analysis.html#numeric-literals
+    const digitpart = '[0-9](_?[0-9])*';
+    const pointfloat = `(\\b(${digitpart}))?\\.(${digitpart})|\\b(${digitpart})\\.`;
+    // Whitespace after a number (or any lexical token) is needed only if its absence
+    // would change the tokenization
+    // https://docs.python.org/3.9/reference/lexical_analysis.html#whitespace-between-tokens
+    // We deviate slightly, requiring a word boundary or a keyword
+    // to avoid accidentally recognizing *prefixes* (e.g., `0` in `0x41` or `08` or `0__1`)
+    const lookahead = `\\b|${RESERVED_WORDS.join('|')}`;
+    const NUMBER = {
+      className: 'number',
+      relevance: 0,
+      variants: [
+        // exponentfloat, pointfloat
+        // https://docs.python.org/3.9/reference/lexical_analysis.html#floating-point-literals
+        // optionally imaginary
+        // https://docs.python.org/3.9/reference/lexical_analysis.html#imaginary-literals
+        // Note: no leading \b because floats can start with a decimal point
+        // and we don't want to mishandle e.g. `fn(.5)`,
+        // no trailing \b for pointfloat because it can end with a decimal point
+        // and we don't want to mishandle e.g. `0..hex()`; this should be safe
+        // because both MUST contain a decimal point and so cannot be confused with
+        // the interior part of an identifier
+        {
+          begin: `(\\b(${digitpart})|(${pointfloat}))[eE][+-]?(${digitpart})[jJ]?(?=${lookahead})`
+        },
+        {
+          begin: `(${pointfloat})[jJ]?`
+        },
+
+        // decinteger, bininteger, octinteger, hexinteger
+        // https://docs.python.org/3.9/reference/lexical_analysis.html#integer-literals
+        // optionally "long" in Python 2
+        // https://docs.python.org/2.7/reference/lexical_analysis.html#integer-and-long-integer-literals
+        // decinteger is optionally imaginary
+        // https://docs.python.org/3.9/reference/lexical_analysis.html#imaginary-literals
+        {
+          begin: `\\b([1-9](_?[0-9])*|0+(_?0)*)[lLjJ]?(?=${lookahead})`
+        },
+        {
+          begin: `\\b0[bB](_?[01])+[lL]?(?=${lookahead})`
+        },
+        {
+          begin: `\\b0[oO](_?[0-7])+[lL]?(?=${lookahead})`
+        },
+        {
+          begin: `\\b0[xX](_?[0-9a-fA-F])+[lL]?(?=${lookahead})`
+        },
+
+        // imagnumber (digitpart-based)
+        // https://docs.python.org/3.9/reference/lexical_analysis.html#imaginary-literals
+        {
+          begin: `\\b(${digitpart})[jJ](?=${lookahead})`
+        }
+      ]
+    };
+    const COMMENT_TYPE = {
+      className: "comment",
+      begin: regex.lookahead(/# type:/),
+      end: /$/,
+      keywords: KEYWORDS,
+      contains: [
+        { // prevent keywords from coloring `type`
+          begin: /# type:/
+        },
+        // comment within a datatype comment includes no keywords
+        {
+          begin: /#/,
+          end: /\b\B/,
+          endsWithParent: true
+        }
+      ]
+    };
+    const PARAMS = {
+      className: 'params',
+      variants: [
+        // Exclude params in functions without params
+        {
+          className: "",
+          begin: /\(\s*\)/,
+          skip: true
+        },
+        {
+          begin: /\(/,
+          end: /\)/,
+          excludeBegin: true,
+          excludeEnd: true,
+          keywords: KEYWORDS,
+          contains: [
+            'self',
+            PROMPT,
+            NUMBER,
+            STRING,
+            hljs.HASH_COMMENT_MODE
+          ]
+        }
+      ]
+    };
+    SUBST.contains = [
+      STRING,
+      NUMBER,
+      PROMPT
+    ];
+
+    return {
+      name: 'Python',
+      aliases: [
+        'py',
+        'gyp',
+        'ipython'
+      ],
+      unicodeRegex: true,
+      keywords: KEYWORDS,
+      illegal: /(<\/|\?)|=>/,
+      contains: [
+        PROMPT,
+        NUMBER,
+        {
+          // very common convention
+          scope: 'variable.language',
+          match: /\bself\b/
+        },
+        {
+          // eat "if" prior to string so that it won't accidentally be
+          // labeled as an f-string
+          beginKeywords: "if",
+          relevance: 0
+        },
+        { match: /\bor\b/, scope: "keyword" },
+        STRING,
+        COMMENT_TYPE,
+        hljs.HASH_COMMENT_MODE,
+        {
+          match: [
+            /\bdef/, /\s+/,
+            IDENT_RE,
+          ],
+          scope: {
+            1: "keyword",
+            3: "title.function"
+          },
+          contains: [ PARAMS ]
+        },
+        {
+          variants: [
+            {
+              match: [
+                /\bclass/, /\s+/,
+                IDENT_RE, /\s*/,
+                /\(\s*/, IDENT_RE,/\s*\)/
+              ],
+            },
+            {
+              match: [
+                /\bclass/, /\s+/,
+                IDENT_RE
+              ],
+            }
+          ],
+          scope: {
+            1: "keyword",
+            3: "title.class",
+            6: "title.class.inherited",
+          }
+        },
+        {
+          className: 'meta',
+          begin: /^[\t ]*@/,
+          end: /(?=#)|$/,
+          contains: [
+            NUMBER,
+            PARAMS,
+            STRING
+          ]
+        }
+      ]
+    };
+  }
+
+  return python;
+
+})();
+
+    hljs.registerLanguage('python', hljsGrammar);
   })();/*! `shell` grammar compiled for Highlight.js 11.11.1 */
   (function(){
     var hljsGrammar = (function () {

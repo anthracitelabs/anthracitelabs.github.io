@@ -49,8 +49,8 @@ a:visited {
 }
 
 h1 {
-	margin-top: 50px;
-	margin-bottom: 80px;
+	margin-top: 40px;
+	margin-bottom: 60px;
 	text-align: center;
 }
 
@@ -68,10 +68,10 @@ img {
 	text-align: center;	
 }
 
-/*
 div {
-  border: 0.5px solid black;
-}*/
+  /*border: 0.5px solid black;*/
+  padding: 0px 15px;
+}
 
 .page-menu a {
     color: var(--color-menu-link);
@@ -93,16 +93,12 @@ div {
     font-size: 18px;
     text-align: end;
     width: 100%;
-    margin-top: 0px
+    margin-top: 0px;
 }
 
 .page-menu a {
     font-family: ZillaSlab-Regular;
     text-transform: lowercase
-}
-
-.page-menu {
-	margin-top: 0px
 }
 
 .page-menu .menu-toggle:focus+.menu,.page-menu .menu:hover {
@@ -179,5 +175,5 @@ div {
 }
 
 .page-menu .menu-link {
-	padding:0px 10px
+	padding:0px 15px;
 }
