@@ -2,15 +2,7 @@
 layout: default
 ---
 
-# anthracite labs
-				  
-email   : anthracitelabs[at]gmail[dot]com
-
-github  : github.com/anthracitelabs
-
-youtube : youtube.com/anthracitelabs
-
-
+# Contents
 
 
 [Android](index) Android development
