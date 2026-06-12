@@ -1,3 +1,6 @@
+---
+layout: default
+---
 
 
 execute ctags to generate tags for you project. After this step Ctrl+] will go to definition.
