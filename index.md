@@ -13,7 +13,7 @@ youtube : youtube.com/anthracitelabs
 
 
 
-[Android](index) Android development
+[Android](android) Android development
 
 [Git tips](backup/html/git.md.html) Notes on git
 
