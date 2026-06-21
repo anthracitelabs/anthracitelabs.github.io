@@ -50,4 +50,30 @@ W:\mycode>cl main.cpp
 ```
 
 
+Creating a desktop application using Win32 API<sup>1</sup>
+
+
+Prepare your development environment<sup>2</sup>
+
+
 Windows has its own set of graphics libraries [as seen here](https://learn.microsoft.com/en-us/windows/win32/learnwin32/overview-of-the-windows-graphics-architecture)
+
+
+## Epilogue
+
+This page—that isn't a total content—was licensed under [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
+
+---
+
+<sup>[1]: See [win32 api](https://learn.microsoft.com/en-us/windows/win32/desktop-programming)</sup>
+
+
+<sup>[2]: See [win32 api](https://learn.microsoft.com/en-us/windows/win32/learnwin32/prepare-your-development-environment)</sup>
+
+
+<sup>[3]: See [win32 api](https://learn.microsoft.com/en-us/windows/apps/get-started/?tabs=native)</sup>
+
+
+<sup>[4]: See [win32 api](https://learn.microsoft.com/en-us/windows/win32/learnwin32/learn-to-program-for-windows)</sup>
+
+---
