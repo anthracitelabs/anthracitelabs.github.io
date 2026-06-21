@@ -2,13 +2,14 @@
 layout: default
 ---
 
-# Drawing Graphics on Screen (on Windows)
+# Writing a Simple Windows Application using Win32 API 
 
-<p class="topshort">Drawing graphics on screen requires going through platform libraries if you are not using a cross platform library.</p>
+<p class="topshort">This simple Windows application creates and shows a window.</p>
 
 ![sea, underwater fish](/images/fish.png){:style="width: 80%; display: block;float: none;margin-left: auto;margin-right: auto;margin-top: 50px;margin-bottom: 50px;"} 
 
-## Getting your environment ready
+
+## 1. Getting your environment ready
 
 
 You can use any editor or IDE you like to follow this tutorial. I use a text editor (vim) to edit source files and command line to compile them into the final executable. You only need to download [Visual Studio Build Tools](https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio-2019).
