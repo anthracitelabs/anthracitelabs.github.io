@@ -2,6 +2,14 @@
 layout: default
 ---
 
+# A Quick Guide About Using Vim 
+
+<p class="topshort">Below is a organized list of keys and commands for vim.</p>
+
+![sea, underwater fish](/images/fish.png){:style="width: 80%; display: block;float: none;margin-left: auto;margin-right: auto;margin-top: 50px;margin-bottom: 50px;"} 
+
+
+## Using Vim
 
 When you open a file set the current directory 
 ~~~~~ vim
@@ -22,66 +30,61 @@ Modes
 | <kbd>Esc</kbd> |   Return to normal mode |
 
 
-<kbd>H</kbd><kbd>J</kbd><kbd>K</kbd><kbd>L</kbd>   Left Down Up Right
+| Key | Insertion Behavior |
+| :---: | :--- |
+| <kbd>a</kbd> | Insert after cursor |
+| <kbd>A</kbd> | Insert after line |
+| [n]<kbd>i</kbd> | Insert text before the cursor n times |
+| [n]<kbd>I</kbd> | Insert text before the first char of the line n times |
+| [n]<kbd>a</kbd> | Append text after the cursor n times |
+| [n]<kbd>A</kbd> | Append text after the end of line n times |
+| [n]<kbd>o</kbd> | Begin a new line below the cursor and insert text, repeat n times |
+| [n]<kbd>O</kbd> | Begin a new line above the cursor and insert text, repeat n times |
+| [n]["x]<kbd>c</kbd><kbd>c</kbd> | Delete current line [into register x] and enter insert mode |
+| [n]["x]<kbd>C</kbd> | same as c$ but also take into register |
+| <kbd>c</kbd><kbd>$</kbd> | Delete from the cursor position to the end of the line and enter insert mode |
+| <kbd>c</kbd><kbd>w</kbd> | Delete from the cursor position to the end of the current word and enter insert mode |
+| <kbd>c</kbd><kbd>e</kbd> | Delete from the cursor position to the end of the current word and enter insert mode |
+| <kbd>c</kbd><kbd>i</kbd><kbd>w</kbd> | Delete the current inner word and enter insert mode |
+| [n]<kbd>y</kbd><kbd>y</kbd> | Yank the current n lines, default is only the current line |
+| <kbd>y</kbd><kbd>i</kbd><kbd>w</kbd> | Yank inner word |
+| <kbd>y</kbd><kbd>$</kbd> | Yank to the end of current line |
+| [n]["x]<kbd>s</kbd> | (substitute) delete n characters [into register x] and start insert | 
+| [n]["x]<kbd>S</kbd> | (substitute) delete n lines [into register x] and start insert |
 
-<kbd>a</kbd>   Insert after cursor
 
-<kbd>A</kbd>   Insert after line
+| Key | Movement Behavior |
+| :---: | :--- |
+| <kbd>H</kbd> | Left   |
+| <kbd>J</kbd> | Down |
+| <kbd>K</kbd> | Up |
+| <kbd>L</kbd> | Right |
+| [n]<kbd>w</kbd> | Jump to start of nth word |
+| [n]<kbd>e</kbd> | Jump to end of nth word |
+| [n]<kbd>b</kbd> | Jump to start previous nth word |
+| [n]<kbd>h</kbd> | Cursor n chars to the left |
+| [n]<kbd>l</kbd> | Cursor n chars to the right |
+| [n]<kbd>j</kbd> | Cursor n lines downward |
+| [n]<kbd>k</kbd> | Cursor n lines upward |
+| [n]<kbd>H</kbd> | Cursor to the line n from top of screen |
+| <kbd>M</kbd> | Cursor to the middle of screen |
+| [n]<kbd>L</kbd> | Cursor to the line n from bottom of screen |
+| [n]<kbd>g</kbd><kbd>g</kbd> | Cursor to line n, default first line |
+| [n]<kbd>G</kbd> | Cursor to line n, default last line |
+| <kbd>0</kbd> | Jump to beginning of line |
+| <kbd>$</kbd> | Jump to end of line |
+| <kbd>^</kbd> | Jump to beginning character of line |
+| <kbd>g</kbd> + <kbd>g</kbd> | Go to the end of document |
+| <kbd>G</kbd> | Go to the beginning of document |
+| <kbd>Ctrl</kbd><kbd>D</kbd> | Move cursor down half page |
+| <kbd>Ctrl</kbd><kbd>U</kbd> | Move cursor up half page |
+| <kbd>Ctrl</kbd><kbd>B</kbd> | Move screen up one page |
+| <kbd>Ctrl</kbd><kbd>F</kbd> | Move screen down one page |
 
-[n]<kbd>i</kbd> Insert text before the cursor n times
-[n]<kbd>I</kbd> Insert text before the first char of the line n times
-
-[n]<kbd>a</kbd> Append text after the cursor n times
-[n]<kbd>A</kbd> Append text after the end of line n times
-
-[n]<kbd>o</kbd> Begin a new line below the cursor and insert text, repeat n times
-[n]<kbd>O</kbd> Begin a new line above the cursor and insert text, repeat n times
-
-[n]["x]<kbd>c</kbd><kbd>c</kbd> Delete current line [into register x] and enter insert mode
-[n]["x]<kbd>C</kbd> same as c$ but also take into register
-
-<kbd>c</kbd><kbd>$</kbd> Delete from the cursor position to the end of the line and enter insert mode
-<kbd>c</kbd><kbd>w</kbd> Delete from the cursor position to the end of the current word and enter insert mode
-<kbd>c</kbd><kbd>e</kbd> Delete from the cursor position to the end of the current word and enter insert mode
-<kbd>c</kbd><kbd>i</kbd><kbd>w</kbd> Delete the current inner word and enter insert mode
-
-[n]<kbd>y</kbd><kbd>y</kbd>  Yank the current n lines, default is only the current line
-<kbd>y</kbd><kbd>i</kbd><kbd>w</kbd> Yank inner word
-<kbd>y</kbd><kbd>$</kbd>  Yank to the end of current line
-
-[n]["x]<kbd>s</kbd> (substitute) delete n characters [into register x] and start insert 
-[n]["x]<kbd>S</kbd> (substitute) delete n lines [into register x] and start insert 
-
-[n]<kbd>w</kbd>   Jump to start of nth word
-[n]<kbd>e</kbd>   Jump to end of nth word
-[n]<kbd>b</kbd>   Jump to start previous nth word
-
-[n]<kbd>h</kbd>   Cursor n chars to the left
-[n]<kbd>l</kbd>   Cursor n chars to the right
-[n]<kbd>j</kbd>   Cursor n lines downward
-[n]<kbd>k</kbd>   Cursor n lines upward
-
-[n]<kbd>H</kbd>   Cursor to the line n from top of screen
-<kbd>M</kbd>      Cursor to the middle of screen
-[n]<kbd>L</kbd>   Cursor to the line n from bottom of screen
-[n]<kbd>g</kbd><kbd>g</kbd>  Cursor to line n, default first line
-[n]<kbd>G</kbd>   Cursor to line n, default last line
-
-<kbd>0</kbd>   Jump to beginning of line
-<kbd>$</kbd>   Jump to end of line
-<kbd>^</kbd>   Jump to beginning character of line
 
 <kbd>f</kbd> + <kbd>s</kbd>   Find first occurrence of 's' after the cursor  
 <kbd>;</kbd>   Repeat last find forward
 <kbd>,</kbd>   Repeat last find backwards
-
-<kbd>g</kbd> + <kbd>g</kbd>   Go to the end of document
-<kbd>G</kbd>   Go to the beginning of document
-
-<kbd>Ctrl</kbd><kbd>D</kbd> Move cursor down half page
-<kbd>Ctrl</kbd><kbd>U</kbd> Move cursor up half page
-<kbd>Ctrl</kbd><kbd>B</kbd> Move screen up one page
-<kbd>Ctrl</kbd><kbd>F</kbd> Move screen down one page
 
 [n]<kbd>Ctrl</kbd><kbd>W</kbd> <kbd>s</kbd> Split current window in two parts, new window n lines high
 [n]<kbd>Ctrl</kbd><kbd>W</kbd> <kbd>v</kbd> Split current window vertically, new window n columns wide
