@@ -11,24 +11,15 @@ When you open a file set the current directory
 Modes
 ----------------
 
-| Header 1 | Header 2 | Header 3 |
-| :---: | :---: | :---: |
-| :Row 1, Col 1: | :Row 1, Col 2: | :Row 1, Col 3: |
-| :Row 2, Col 1: | :Row 2, Col 2: | :Row 2, Col 3: |
-
-<kbd>i</kbd>			Insert mode
-
-<kbd>R</kbd>			Replace mode
-
-<kbd>v</kbd>			Visual mode
-
-<kbd>V</kbd>			Visual line mode
-
-<kbd>Ctrl</kbd> + <kbd>V</kbd>	Visual block mode
-
-<kbd>:</kbd>			Command line mode
-
-<kbd>Esc</kbd>			Return to normal mode
+| Key | Mode |
+| :---: | :---: |
+| <kbd>i</kbd> | Insert mode |
+| <kbd>R</kbd> | Replace mode |
+| <kbd>v</kbd> | Visual mode |
+| <kbd>V</kbd> | Visual line mode |
+| <kbd>Ctrl</kbd> + <kbd>V</kbd> | Visual block mode |
+| <kbd>:</kbd> | Command line mode |
+| <kbd>Esc</kbd> | Return to normal mode |
 
 
 <kbd>H</kbd><kbd>J</kbd><kbd>K</kbd><kbd>L</kbd>   Left Down Up Right
