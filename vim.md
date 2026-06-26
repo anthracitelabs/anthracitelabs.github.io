@@ -12,14 +12,14 @@ Modes
 ----------------
 
 | Key | Mode |
-| :---: | :---: |
-| <kbd>i</kbd> | Insert mode |
-| <kbd>R</kbd> | Replace mode |
-| <kbd>v</kbd> | Visual mode |
-| <kbd>V</kbd> | Visual line mode |
-| <kbd>Ctrl</kbd> + <kbd>V</kbd> | Visual block mode |
-| <kbd>:</kbd> | Command line mode |
-| <kbd>Esc</kbd> | Return to normal mode |
+| :---: | :--- |
+| <kbd>i</kbd> |   Insert mode |
+| <kbd>R</kbd> |   Replace mode |
+| <kbd>v</kbd> |   Visual mode |
+| <kbd>V</kbd> |   Visual line mode |
+| <kbd>Ctrl</kbd> + <kbd>V</kbd> |   Visual block mode |
+| <kbd>:</kbd> |   Command line mode |
+| <kbd>Esc</kbd> |   Return to normal mode |
 
 
 <kbd>H</kbd><kbd>J</kbd><kbd>K</kbd><kbd>L</kbd>   Left Down Up Right
