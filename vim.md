@@ -98,8 +98,10 @@ Search
 Windowing
 ----------------
 
-[n]<kbd>Ctrl</kbd><kbd>W</kbd> <kbd>s</kbd> Split current window in two parts, new window n lines high
-[n]<kbd>Ctrl</kbd><kbd>W</kbd> <kbd>v</kbd> Split current window vertically, new window n columns wide
+| Key | Window Behavior |
+| :--- | :--- |
+| [n]<kbd>Ctrl</kbd><kbd>W</kbd> <kbd>s</kbd> | Split current window in two parts, new window n lines high |
+| [n]<kbd>Ctrl</kbd><kbd>W</kbd> <kbd>v</kbd> | Split current window vertically, new window n columns wide |
 
 to open a file in a split window
 ~~~~ vim
