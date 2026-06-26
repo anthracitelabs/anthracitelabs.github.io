@@ -12,9 +12,9 @@ layout: default
 ## Using Vim
 
 When you open a file set the current directory 
-~~~~~ vim
+~~~~~~~~~~~~~~~ cmd
 :cd %:p:h
-~~~~~
+~~~~~~~~~~~~~~~
 
 Modes
 ----------------
