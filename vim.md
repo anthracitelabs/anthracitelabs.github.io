@@ -379,10 +379,12 @@ To run a terminal command and pass the output to current buffer
 Macros
 -------------------
 
-q{0-9a-zA-Z"}	Record typed characters into named register {0-9a-zA-Z"}(uppercase to append)
-q		(while recording) stops recording
-[n]@{a-z}	Execute the contents of register {a-z} n times
-[n]@@		Repeat the previously executed macro n times
+| Key | Macro Behavior |
+| :---: | :--- |
+| q{0-9a-zA-Z"} | Record typed characters into named register {0-9a-zA-Z"}(uppercase to append) |
+| q | (while recording) stops recording |
+| [n]@{a-z} | Execute the contents of register {a-z} n times |
+| [n]@@ | Repeat the previously executed macro n times |
 
 
 # Sample vimrc
