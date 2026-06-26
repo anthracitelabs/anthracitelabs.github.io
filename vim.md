@@ -283,7 +283,7 @@ At that point, you might scream to your screen, violently shacked by extrem curi
 
 What about doing a find and replace in the working directory and the subdirectories? You can populate the arglist as follow:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ vim
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ c
 :arg **/*.html
 :argadd **/*.php
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -301,14 +301,6 @@ How to Indent
 
 If you’re copying blocks of text around and need to align the indent of a block in its new location, use <kbd>]</kbd>+<kbd>p</kbd> instead of just p. This aligns the pasted block with the surrounding text.
 
-Source init.lua
----------------
-
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ vim
-:luafile init.lua
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-
 # using ctags with vim
 
 execute ctags to generate tags for you project. 
@@ -322,14 +314,14 @@ cd /path/to/your/project
 ctags -f tags -R --fields=+K+a
 ~~~~
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ cmd
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ c
 ctags -R .
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 In your ~/.vimrc file, add this short block:
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ vim
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ c
  " ctags optimization
  set autochdir
  set tags=tags;
@@ -372,12 +364,12 @@ Terminal Commands
 ----------------------
 
 To run a terminal command without input or output
-~~~~~~ vim
+~~~~~~ c
 :!{command}
 ~~~~~~
 
 To run a terminal command and pass the output to current buffer
-~~~~~~ vim
+~~~~~~ c
 :read !{command}
 ~~~~~~
 
@@ -395,7 +387,7 @@ Macros
 # Sample vimrc
 
 
-~~~~~~ vim
+~~~~~~ c
 syntax on
 set background=dark
 colorscheme desert
