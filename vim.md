@@ -20,7 +20,7 @@ Modes
 ----------------
 
 | Key | Mode |
-| :---: | :--- |
+| :--- | :--- |
 | <kbd>i</kbd> |   Insert mode |
 | <kbd>R</kbd> |   Replace mode |
 | <kbd>v</kbd> |   Visual mode |
@@ -33,7 +33,7 @@ Editing
 ----------------
 
 | Key | Insertion Behavior |
-| :---: | :--- |
+| :--- | :--- |
 | <kbd>a</kbd> | Insert after cursor |
 | <kbd>A</kbd> | Insert after line |
 | [n]<kbd>i</kbd> | Insert text before the cursor n times |
@@ -58,7 +58,7 @@ Movement
 ----------------
 
 | Key | Movement Behavior |
-| :---: | :--- |
+| :--- | :--- |
 | <kbd>H</kbd> | Left   |
 | <kbd>J</kbd> | Down |
 | <kbd>K</kbd> | Up |
@@ -88,15 +88,18 @@ Movement
 Search
 ----------------
 
-<kbd>f</kbd> + <kbd>s</kbd>   Find first occurrence of 's' after the cursor  
-<kbd>;</kbd>   Repeat last find forward
-<kbd>,</kbd>   Repeat last find backwards
+| Key | Search Behavior |
+| :--- | :--- |
+| <kbd>f</kbd> + <kbd>s</kbd> | Find first occurrence of 's' after the cursor |
+| <kbd>;</kbd> | Repeat last find forward |
+| <kbd>,</kbd> | Repeat last find backwards |
 
-[n]<kbd>Ctrl</kbd><kbd>W</kbd> <kbd>s</kbd> Split current window in two parts, new window n lines high
-[n]<kbd>Ctrl</kbd><kbd>W</kbd> <kbd>v</kbd> Split current window vertically, new window n columns wide
 
 Windowing
 ----------------
+
+[n]<kbd>Ctrl</kbd><kbd>W</kbd> <kbd>s</kbd> Split current window in two parts, new window n lines high
+[n]<kbd>Ctrl</kbd><kbd>W</kbd> <kbd>v</kbd> Split current window vertically, new window n columns wide
 
 to open a file in a split window
 ~~~~ vim
