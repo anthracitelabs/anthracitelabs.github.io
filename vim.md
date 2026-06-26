@@ -3,14 +3,6 @@ layout: default
 ---
 
 
-execute ctags to generate tags for you project. After this step <kbd>Ctrl</kbd> + <kbd>]</kbd> will go to definition.
-<kbd>g</kbd> then <kbd>Ctrl</kbd> + <kbd>]</kbd> — Show a list of matching definitions if there are duplicates.
-
-~~~~
-cd /path/to/your/project
-ctags -f tags -R --fields=+K+a
-~~~~
-
 When you open a file set the current directory 
 ~~~~~ vim
 :cd %:p:h
@@ -19,12 +11,23 @@ When you open a file set the current directory
 Modes
 ----------------
 
+| Header 1 | Header 2 | Header 3 |
+| :---: | :---: | :---: |
+| :Row 1, Col 1: | :Row 1, Col 2: | :Row 1, Col 3: |
+| :Row 2, Col 1: | :Row 2, Col 2: | :Row 2, Col 3: |
+
 <kbd>i</kbd>			Insert mode
+
 <kbd>R</kbd>			Replace mode
+
 <kbd>v</kbd>			Visual mode
+
 <kbd>V</kbd>			Visual line mode
+
 <kbd>Ctrl</kbd> + <kbd>V</kbd>	Visual block mode
+
 <kbd>:</kbd>			Command line mode
+
 <kbd>Esc</kbd>			Return to normal mode
 
 
@@ -299,6 +302,17 @@ Source init.lua
 
 
 # using ctags with vim
+
+execute ctags to generate tags for you project. 
+
+After this step <kbd>Ctrl</kbd> + <kbd>]</kbd> will go to definition.
+
+<kbd>g</kbd> then <kbd>Ctrl</kbd> + <kbd>]</kbd> — Show a list of matching definitions if there are duplicates.
+
+~~~~ shell
+cd /path/to/your/project
+ctags -f tags -R --fields=+K+a
+~~~~
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ cmd
 ctags -R .
