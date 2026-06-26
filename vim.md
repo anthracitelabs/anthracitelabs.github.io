@@ -29,6 +29,8 @@ Modes
 | <kbd>:</kbd> |   Command line mode |
 | <kbd>Esc</kbd> |   Return to normal mode |
 
+Editing
+----------------
 
 | Key | Insertion Behavior |
 | :---: | :--- |
@@ -52,6 +54,8 @@ Modes
 | [n]["x]<kbd>s</kbd> | (substitute) delete n characters [into register x] and start insert | 
 | [n]["x]<kbd>S</kbd> | (substitute) delete n lines [into register x] and start insert |
 
+Movement
+----------------
 
 | Key | Movement Behavior |
 | :---: | :--- |
@@ -81,6 +85,8 @@ Modes
 | <kbd>Ctrl</kbd><kbd>B</kbd> | Move screen up one page |
 | <kbd>Ctrl</kbd><kbd>F</kbd> | Move screen down one page |
 
+Search
+----------------
 
 <kbd>f</kbd> + <kbd>s</kbd>   Find first occurrence of 's' after the cursor  
 <kbd>;</kbd>   Repeat last find forward
@@ -88,6 +94,9 @@ Modes
 
 [n]<kbd>Ctrl</kbd><kbd>W</kbd> <kbd>s</kbd> Split current window in two parts, new window n lines high
 [n]<kbd>Ctrl</kbd><kbd>W</kbd> <kbd>v</kbd> Split current window vertically, new window n columns wide
+
+Windowing
+----------------
 
 to open a file in a split window
 ~~~~ vim
