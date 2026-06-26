@@ -33,7 +33,7 @@ Editing
 ----------------
 
 | Key | Insertion Behavior |
-| :--- | :--- |
+| :----- | :----- |
 | <kbd>a</kbd> | Insert after cursor |
 | <kbd>A</kbd> | Insert after line |
 | [n]<kbd>i</kbd> | Insert text before the cursor n times |
