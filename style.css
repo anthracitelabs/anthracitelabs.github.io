@@ -7,8 +7,8 @@
     --color-menu-bg: #F5FBE6;
 	--color-bg: #F5FBE6;
 	--color-text: #215E61;
-	--color-link: #547792;
-	--color-link-visited: #FAB95B;
+	--color-link: #0000FF;
+	--color-link-visited: #0000FF;
 }
 @media (prefers-color-scheme: dark) {
 :root {
@@ -72,6 +72,10 @@ img {
 div {
   /*border: 0.5px solid black;*/
   padding: 0px 15px;
+}
+
+table {
+  width: 100%; /* Ensures the row stretches fully */
 }
 
 .page-menu a {
