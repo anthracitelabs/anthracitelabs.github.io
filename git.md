@@ -1,16 +1,13 @@
-<meta charset="utf-8" emacsmode="-*- markdown -*-">
-<script src="../js/viewport-script.js" type="text/javascript" charset="utf-8">
-apply_viewport();
-</script>
+---
+layout: default
+---
 
-<meta id="viewport" name="viewport">
-
-
-                          **Git notes**
+# Git notes
 						  
-How to overwrite local git branch. Step by step guide to overwrite local git branch. Suppose you have modification in your local repo. And there are changes ready to be pulled from remote repo.
+<p class="topshort">How to overwrite local git branch. Step by step guide to overwrite local git branch. Suppose you have modification in your local repo. And there are changes ready to be pulled from remote repo.
+</p>
 
-![alt text](../github1.png "Github workflow")
+![alt text](images/github1.png "Github workflow"){:style="width: 100%; display: block;float: none;margin-left: auto;margin-right: auto;margin-top: 50px;margin-bottom: 50px;"} 
 
 Fetch remote state
 =================================================================
@@ -19,6 +16,7 @@ Note that remote changes are not merged into your local directory yet. This upda
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 git fetch origin
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 Checkout the branch 
 ==============================================================
 
@@ -32,7 +30,9 @@ Local branch hard reset
 
 Overwrite local branch by doing a hard reset via --hard option which resets the index and working tree.
 All changes in tracked files since the commit are discarded. This command resets the current branch's head to the specified commit (in this case, the latest commit of the branch on the remote).
-![alt text](../github2.png "Github workflow")
+
+
+![alt text](images/github2.png "Github workflow"){:style="width: 100%; display: block;float: none;margin-left: auto;margin-right: auto;margin-top: 50px;margin-bottom: 50px;"} 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 git reset --hard origin/branch-name
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -59,15 +59,3 @@ Alternatively for a full output
 git remote show origin
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-<br>
-<br>
-[Home](../index.md.html)
-<br>
-<br>
-<a href="https://www.buymeacoffee.com/anthracitelabs" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
-
-
-
-<script>markdeepOptions = {tocStyle: 'none'};</script>
-<!-- Markdeep: --><style class="fallback">body{visibility:hidden;white-space:pre;font-family:monospace}</style>
-<script src="../js/markdeep.min.js?" charset="utf-8"></script><script>window.alreadyProcessedMarkdeep||(document.body.style.visibility="visible")</script>
