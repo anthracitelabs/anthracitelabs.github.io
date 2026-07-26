@@ -13,7 +13,7 @@ layout: default
 |[ffmpeg usage](ffmpeg)    | edit raw sound bytes with ffmpeg  |
 |[toolchain notes](toolchain)    | notes about toolchains    |
 |[c notes](c)    | C notes   |
-|    |     |
+|[Japan](japan)    | Japonya   |
 |    |     |
 |    |     |
 
