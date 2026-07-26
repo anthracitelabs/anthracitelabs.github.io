@@ -59,9 +59,10 @@ Seat Number	42D
   
 # Ulaşım
 
+* Osaka'ya gidiş (Tokyo dışına ulaşım) : [Shinkansen app](https://smart-ex.jp/en/lp/app/)
 * welcome suica kart al 2 tane, depozitolu olan değil
 * jr yamanote line
-* havaalani tokyo için narita express 
+* havaalani tokyo için narita express
 
 # POI
 
