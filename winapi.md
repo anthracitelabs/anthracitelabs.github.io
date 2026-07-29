@@ -6,7 +6,7 @@ layout: default
 
 <p class="topshort">This simple Windows application creates and shows a window.</p>
 
-![sea, underwater fish](/images/fish.png){:style="width: 80%; display: block;float: none;margin-left: auto;margin-right: auto;margin-top: 50px;margin-bottom: 50px;"} 
+![sea, underwater fish](/images/1.jpg){:style="width: 80%; display: block;float: none;margin-left: auto;margin-right: auto;margin-top: 50px;margin-bottom: 50px;"} 
 
 
 # Getting your environment ready
