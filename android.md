@@ -8,7 +8,7 @@ layout: default
 requires internet connection and downloads a ton of other dependencies, etc. You build faster and know what is going on.
 </p>
 
-![sea, underwater fish](/images/fish.png){:style="width: 80%; display: block;float: none;margin-left: auto;margin-right: auto;margin-top: 50px;margin-bottom: 50px;"} 
+![sea, underwater fish](/images/3.jpg){:style="width: 80%; display: block;float: none;margin-left: auto;margin-right: auto;margin-top: 50px;margin-bottom: 50px;"} 
 
 First, you need to install java, in my case, I install the headless version because I don’t use graphics (only command line):
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Bash
