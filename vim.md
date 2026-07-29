@@ -6,7 +6,7 @@ layout: default
 
 <p class="topshort">Below is a organized list of keys and commands for vim.</p>
 
-![sea, underwater fish](/images/fish.png){:style="width: 80%; display: block;float: none;margin-left: auto;margin-right: auto;margin-top: 50px;margin-bottom: 50px;"} 
+![sea, underwater fish](/images/2.jpg){:style="width: 80%; display: block;float: none;margin-left: auto;margin-right: auto;margin-top: 50px;margin-bottom: 50px;"} 
 
 
 ## Using Vim
