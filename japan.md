@@ -74,7 +74,7 @@ Seat Number	42D
 
 | TOKYO | Preview Image | Description |
 | :--- | :---: | :--- |
-| Tokyo Metropolitan Government Building Observatory | ![Smartphone](images/MetropolitanGovBuildingObservatory.png) | Ücretsiz. Shinjuku'da. Akşam git |
-| Godzilla head | ![Laptop](https://picsum.photos) | Kabukishoyu izleyen dev godzilla |
-| Hanazona Shrine | ![Camera](https://picsum.photos) | Huzurlu sakin tapınak. |
-|Shinjuku Golden Gai | ![Camera](https://picsum.photos) | Dar Sokaklar |
+| Tokyo Metropolitan Government Building Observatory | ![Metropolitan](images/MetropolitanGovBuildingObservatory.png) | Ücretsiz. Shinjuku'da. Akşam git |
+| Godzilla head | ![Godzilla](images/godzilla.png) | Kabukishoyu izleyen dev godzilla |
+| Hanazona Shrine | ![Hanazona](images/hanazona.png) | Huzurlu sakin tapınak. |
+|Shinjuku Golden Gai | ![GoldenGai](images) | Dar Sokaklar |
