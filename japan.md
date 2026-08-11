@@ -66,12 +66,6 @@ Seat Number	42D
 
 # POI
 
-* akiabara electronic town
-* asakusa tapinak
-* shinjuku ulus gibi kaotik yemek gezmelik
-* meiji tapinak
-* shibuya sky fotoğraf için
-
 | TOKYO | Preview Image | Description |
 | :--- | :---: | :--- |
 | Tokyo Metropolitan Government Building Observatory | ![Metropolitan](images/MetropolitanGovBuildingObservatory.png) | Ücretsiz. Shinjuku'da. Akşam git |
