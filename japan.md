@@ -66,13 +66,13 @@ Seat Number	42D
 
 # POI
 
-| TOKYO | Preview Image | Description |
+| TOKYO | Görsel | Notlar |
 | :--- | :---: | :--- |
 | Tokyo Metropolitan Government Building Observatory | ![Metropolitan](images/MetropolitanGovBuildingObservatory.png) | Ücretsiz. Shinjuku'da. Akşam git |
 | Godzilla head | ![Godzilla](images/godzilla.png) | Kabukishoyu izleyen dev godzilla |
 | Hanazona Shrine | ![Hanazona](images/hanazona.png) | Tapınak |
 | Shinjuku Golden Gai | ![GoldenGai](images/golden.png) | Dar Sokaklar |
-| Tokyo Skytree | ![Skytree](images/skytree.png) | T |
+| Tokyo Skytree | ![Skytree](images/skytree.png) | Sky deck |
 | Senso-Ji Temple | ![Senso-Ji](images/sensoji.png) | Asakusa |
 | Shibuya crossing | ![Shibuya-crossing](images/shibuya.png) | Meydan yaya geçidi |
 | Meiji Jingu | ![Meiji](images/meiji.png) | Tapınak |
@@ -81,3 +81,30 @@ Seat Number	42D
 | Asakusa Shrine | ![Asakusa](images/asakusa-shrine.png) | Tapınak |
 | Akiabara Electronic Town | ![Akihabara](images/akihabara.png) | Alışveriş |
 | Shibuya Sky | ![Shibuya-Sky](images/shibuya-sky.png) | Sky deck |
+
+| KYOTO | Görsel | Notlar |
+| :--- | :---: | :--- |
+| Fushimi Inari Taisha | ![Inari](images/inari.png) | Hiking |
+| Arashiyama Bamboo Grove | ![Bamboo](images/bamboo.png) | Hiking |
+|  | ![](images/.png) |  |
+|  | ![](images/.png) |  |
+|  | ![](images/.png) |  |
+|  | ![](images/.png) |  |
+|  | ![](images/.png) |  |
+|  | ![](images/.png) |  |
+|  | ![](images/.png) |  |
+
+| OSAKA | Görsel | Notlar |
+| :--- | :---: | :--- |
+| Osaka Castle | ![Osaka-Castle](images/osaka-castle.png) | Müze (ücretli) |
+| Dotonbori | ![Dotonbori](images/dotonbori.png) | Nehir cruise gezi |
+|  | ![](images/.png) |  |
+|  | ![](images/.png) |  |
+|  | ![](images/.png) |  |
+|  | ![](images/.png) |  |
+|  | ![](images/.png) |  |
+|  | ![](images/.png) |  |
+|  | ![](images/.png) |  |
+|  | ![](images/.png) |  |
+|  | ![](images/.png) |  |
+|  | ![](images/.png) |  |
