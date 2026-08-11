@@ -86,25 +86,29 @@ Seat Number	42D
 | :--- | :---: | :--- |
 | Fushimi Inari Taisha | ![Inari](images/inari.png) | Hiking |
 | Arashiyama Bamboo Grove | ![Bamboo](images/bamboo.png) | Hiking |
-|  | ![](images/.png) |  |
-|  | ![](images/.png) |  |
-|  | ![](images/.png) |  |
-|  | ![](images/.png) |  |
-|  | ![](images/.png) |  |
-|  | ![](images/.png) |  |
-|  | ![](images/.png) |  |
+| Kinkaku-ji (Golden Pavilion) | ![](images/.png) |  |
+| Gion District | ![](images/.png) |  |
+| Nishiki Market | ![](images/.png) |  |
+| Nijo Castle | ![](images/.png) |  |
+| Heian Shrine | ![](images/.png) |  |
+| Togetsukyo Bridge | ![](images/.png) |  |
+| Kiyomuzu-Dera Temple | ![](images/.png) | manzara (ücretli) |
 
 | OSAKA | Görsel | Notlar |
 | :--- | :---: | :--- |
 | Osaka Castle | ![Osaka-Castle](images/osaka-castle.png) | Müze (ücretli) |
 | Dotonbori | ![Dotonbori](images/dotonbori.png) | Nehir cruise gezi |
-|  | ![](images/.png) |  |
-|  | ![](images/.png) |  |
-|  | ![](images/.png) |  |
-|  | ![](images/.png) |  |
-|  | ![](images/.png) |  |
-|  | ![](images/.png) |  |
-|  | ![](images/.png) |  |
-|  | ![](images/.png) |  |
-|  | ![](images/.png) |  |
-|  | ![](images/.png) |  |
+| Kuromon Ichiba Pazarı | ![](images/.png) |  |
+| Tennoji zoo | ![](images/.png) |  |
+
+
+| NARA | Görsel | Notlar |
+| :--- | :---: | :--- |
+| Nara Park | ![](images/.png) |  |
+| Todai-ji Temple | ![](images/.png) |  |
+| Kasuga Taisha | ![](images/.png) |  |
+| Kofuku-ji | ![](images/.png) |  |
+| Mount Wakakusa | ![](images/.png) |  |
+| Naramachi Old Town | ![](images/.png) |  |
+| Nara Prison Museum | ![](images/.png) |  |
+| Yashino Mountain | ![](images/.png) |  |
