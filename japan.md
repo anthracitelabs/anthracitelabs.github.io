@@ -77,4 +77,10 @@ Seat Number	42D
 | Tokyo Metropolitan Government Building Observatory | ![Metropolitan](images/MetropolitanGovBuildingObservatory.png) | Ücretsiz. Shinjuku'da. Akşam git |
 | Godzilla head | ![Godzilla](images/godzilla.png) | Kabukishoyu izleyen dev godzilla |
 | Hanazona Shrine | ![Hanazona](images/hanazona.png) | Huzurlu sakin tapınak. |
-|Shinjuku Golden Gai | ![GoldenGai](images) | Dar Sokaklar |
+| Shinjuku Golden Gai | ![GoldenGai](images/golden.png) | Dar Sokaklar |
+| Tokyo Skytree | ![Skytree](images/skytree.png) | T |
+| Senso-Ji Temple | ![Senso-Ji](images/sensoji.png) | Asakusa |
+| Shibuya crossing | ![Shibuya-crossing](images/shibuya.png) | Meydan yaya geçidi |
+| Meiji Jingu | ![Meiji](images/meiji.png) | Tapınak |
+| Kabukicho Tower | ![Kabukicho](images/kabukicho.png) | Kule |
+| Teamlab Planets | ![Teamlab](images/teamlab.png) | Müze |
