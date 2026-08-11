@@ -1,54 +1,16 @@
----------------------------------
-2026.10.12 (Mon) 21:20
-IST
-Istanbul
-(Istanbul Airport)
-KE 956
-2026.10.13 (Tue) 13:25
-ICN
-Seoul
-(Incheon)
-Seat Number	50D
----------------------------------
+# Gidiş
 
----------------------------------
-2026.10.13 (Tue) 20:30
-ICN
-Seoul
-(Incheon)
-KE 751
-2026.10.13 (Tue) 22:50
-HND
-Tokyo
-(Tokyo Haneda Intl)
-Seat Number	39A
----------------------------------
+| Kalkış saati | Kalkış Havalimanı | Uçuş | İniş saati | İniş Havalimanı | Koltuk |
+| :--- | :---: | :--- | :--- | :--- | :--- |
+| 2026.10.12 (Mon) 21:20 | IST Istanbul (Istanbul Airport) | KE 956 | 2026.10.13 (Tue) 13:25 | ICN Seoul (Incheon) | Seat Number 50D |
+| 2026.10.13 (Tue) 20:30 | ICN Seoul (Incheon) | KE 751 | 2026.10.13 (Tue) 22:50 | HND Tokyo (Tokyo Haneda Intl) | Seat Number 39A |
 
----------------------------------
-2026.10.24 (Sat) 09:05
-KIX
-Osaka
-(Osaka Kansai International Airport)
-KE 722
-2026.10.24 (Sat) 10:55
-ICN
-Seoul
-(Incheon)
-Seat Number	44F
----------------------------------
+# Dönüş
 
----------------------------------
-2026.10.24 (Sat) 13:40
-ICN
-Seoul
-(Incheon)
-KE 955
-2026.10.24 (Sat) 19:40
-IST
-Istanbul
-(Istanbul Airport)
-Seat Number	42D
----------------------------------
+| Kalkış saati | Kalkış Havalimanı | Uçuş | İniş saati | İniş Havalimanı | Koltuk |
+| :--- | :---: | :--- | :--- | :--- | :--- |
+| 2026.10.24 (Sat) 09:05 | KIX Osaka (Osaka Kansai International Airport) | KE 722 | 2026.10.24 (Sat) 10:55 | ICN Seoul (Incheon) | Seat Number	44F |
+| 2026.10.24 (Sat) 13:40 | ICN Seoul (Incheon) | KE 955 | 2026.10.24 (Sat) 19:40 | IST Istanbul (Istanbul Airport) | Seat Number 42D |
 
 
 # Otel
@@ -65,7 +27,7 @@ Seat Number	42D
 * havaalani tokyo için narita express
 
 # POI
-
+=====================================
 | TOKYO | Görsel | Notlar |
 | :--- | :---: | :--- |
 | Tokyo Metropolitan Government Building Observatory | ![Metropolitan](images/MetropolitanGovBuildingObservatory.png) | Ücretsiz. Shinjuku'da. Akşam git |
@@ -82,7 +44,7 @@ Seat Number	42D
 | Akiabara Electronic Town | ![Akihabara](images/akihabara.png) | Alışveriş |
 | Shibuya Sky | ![Shibuya-Sky](images/shibuya-sky.png) | Sky deck |
 
-
+=====================================
 
 | KYOTO | Görsel | Notlar |
 | :--- | :---: | :--- |
@@ -96,7 +58,7 @@ Seat Number	42D
 | Togetsukyo Bridge | ![](images/.png) |  |
 | Kiyomuzu-Dera Temple | ![](images/.png) | manzara (ücretli) |
 
-
+=====================================
 
 | OSAKA | Görsel | Notlar |
 | :--- | :---: | :--- |
@@ -105,7 +67,7 @@ Seat Number	42D
 | Kuromon Ichiba Pazarı | ![](images/.png) |  |
 | Tennoji zoo | ![](images/.png) |  |
 
-
+=====================================
 
 | NARA | Görsel | Notlar |
 | :--- | :---: | :--- |
