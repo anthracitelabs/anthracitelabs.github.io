@@ -1,16 +1,16 @@
 # Gidiş
 
-| Kalkış saati | Kalkış Havalimanı | Uçuş | İniş saati | İniş Havalimanı | Koltuk |
-| :--- | :---: | :--- | :--- | :--- | :--- |
-| 2026.10.12 (Mon) 21:20 | IST Istanbul (Istanbul Airport) | KE 956 | 2026.10.13 (Tue) 13:25 | ICN Seoul (Incheon) | Seat Number 50D |
-| 2026.10.13 (Tue) 20:30 | ICN Seoul (Incheon) | KE 751 | 2026.10.13 (Tue) 22:50 | HND Tokyo (Tokyo Haneda Intl) | Seat Number 39A |
+| Kalkış saati | Kalkış Havalimanı | Uçuş | İniş saati | İniş Havalimanı |
+| :--- | :---: | :--- | :--- | :--- |
+| 2026.10.12 (Mon) 21:20 | IST Istanbul | KE 956 | 2026.10.13 (Tue) 13:25 | ICN Seoul Incheon |
+| 2026.10.13 (Tue) 20:30 | ICN Seoul Incheon | KE 751 | 2026.10.13 (Tue) 22:50 | HND Tokyo Haneda |
 
 # Dönüş
 
-| Kalkış saati | Kalkış Havalimanı | Uçuş | İniş saati | İniş Havalimanı | Koltuk |
-| :--- | :---: | :--- | :--- | :--- | :--- |
-| 2026.10.24 (Sat) 09:05 | KIX Osaka (Osaka Kansai International Airport) | KE 722 | 2026.10.24 (Sat) 10:55 | ICN Seoul (Incheon) | Seat Number	44F |
-| 2026.10.24 (Sat) 13:40 | ICN Seoul (Incheon) | KE 955 | 2026.10.24 (Sat) 19:40 | IST Istanbul (Istanbul Airport) | Seat Number 42D |
+| Kalkış saati | Kalkış Havalimanı | Uçuş | İniş saati | İniş Havalimanı |
+| :--- | :---: | :--- | :--- | :--- |
+| 2026.10.24 (Sat) 09:05 | KIX Osaka Kansai | KE 722 | 2026.10.24 (Sat) 10:55 | ICN Seoul Incheon |
+| 2026.10.24 (Sat) 13:40 | ICN Seoul Incheon | KE 955 | 2026.10.24 (Sat) 19:40 | IST Istanbul |
 
 
 # Otel
