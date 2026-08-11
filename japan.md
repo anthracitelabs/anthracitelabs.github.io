@@ -27,7 +27,7 @@
 * havaalani tokyo için narita express
 
 # POI
-=====================================
+
 | TOKYO | Görsel | Notlar |
 | :--- | :---: | :--- |
 | Tokyo Metropolitan Government Building Observatory | ![Metropolitan](images/MetropolitanGovBuildingObservatory.png) | Ücretsiz. Shinjuku'da. Akşam git |
@@ -44,6 +44,7 @@
 | Akiabara Electronic Town | ![Akihabara](images/akihabara.png) | Alışveriş |
 | Shibuya Sky | ![Shibuya-Sky](images/shibuya-sky.png) | Sky deck |
 
+~
 =====================================
 
 | KYOTO | Görsel | Notlar |
@@ -58,6 +59,7 @@
 | Togetsukyo Bridge | ![Toegetsukyo](images/togetsukyo.png) | Köprü |
 | Kiyomuzu-Dera Temple | ![Kiyomuzu](images/kiyomuzu.png) | manzara (ücretli) |
 
+~
 =====================================
 
 | OSAKA | Görsel | Notlar |
@@ -67,6 +69,7 @@
 | Kuromon Ichiba Pazarı | ![](images/.png) |  |
 | Tennoji zoo | ![](images/.png) |  |
 
+~
 =====================================
 
 | NARA | Görsel | Notlar |
