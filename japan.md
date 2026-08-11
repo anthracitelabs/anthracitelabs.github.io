@@ -82,6 +82,8 @@ Seat Number	42D
 | Akiabara Electronic Town | ![Akihabara](images/akihabara.png) | Alışveriş |
 | Shibuya Sky | ![Shibuya-Sky](images/shibuya-sky.png) | Sky deck |
 
+
+
 | KYOTO | Görsel | Notlar |
 | :--- | :---: | :--- |
 | Fushimi Inari Taisha | ![Inari](images/inari.png) | Hiking |
@@ -94,6 +96,8 @@ Seat Number	42D
 | Togetsukyo Bridge | ![](images/.png) |  |
 | Kiyomuzu-Dera Temple | ![](images/.png) | manzara (ücretli) |
 
+
+
 | OSAKA | Görsel | Notlar |
 | :--- | :---: | :--- |
 | Osaka Castle | ![Osaka-Castle](images/osaka-castle.png) | Müze (ücretli) |
@@ -102,10 +106,11 @@ Seat Number	42D
 | Tennoji zoo | ![](images/.png) |  |
 
 
+
 | NARA | Görsel | Notlar |
 | :--- | :---: | :--- |
-| Nara Park | ![](images/.png) |  |
-| Todai-ji Temple | ![](images/.png) |  |
+| Nara Park | ![Nara-park](images/nara-park.png) | Geyik Parkı |
+| Todai-ji Temple | ![Todai-ji](images/todaiji.png) | Tapınak |
 | Kasuga Taisha | ![](images/.png) |  |
 | Kofuku-ji | ![](images/.png) |  |
 | Mount Wakakusa | ![](images/.png) |  |
