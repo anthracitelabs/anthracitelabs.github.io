@@ -50,13 +50,13 @@
 | :--- | :---: | :--- |
 | Fushimi Inari Taisha | ![Inari](images/inari.png) | Hiking |
 | Arashiyama Bamboo Grove | ![Bamboo](images/bamboo.png) | Hiking |
-| Kinkaku-ji (Golden Pavilion) | ![](images/.png) |  |
-| Gion District | ![](images/.png) |  |
-| Nishiki Market | ![](images/.png) |  |
-| Nijo Castle | ![](images/.png) |  |
-| Heian Shrine | ![](images/.png) |  |
-| Togetsukyo Bridge | ![](images/.png) |  |
-| Kiyomuzu-Dera Temple | ![](images/.png) | manzara (ücretli) |
+| Kinkaku-ji (Golden Pavilion) | ![Golden-Pavilion](images/golden-pavilion.png) | Tapınak |
+| Gion District | ![Gion](images/gion.png) | Alışveriş |
+| Nishiki Market | ![Nishiki](images/nishiki.png) | Alışveriş |
+| Nijo Castle | ![Nijo-Castle](images/nijo.png) | Kale |
+| Heian Shrine | ![Heian](images/heian.png) | Tapınak |
+| Togetsukyo Bridge | ![Toegetsukyo](images/togetsukyo.png) | Köprü |
+| Kiyomuzu-Dera Temple | ![Kiyomuzu](images/kiyomuzu.png) | manzara (ücretli) |
 
 =====================================
 
