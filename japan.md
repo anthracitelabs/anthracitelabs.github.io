@@ -71,3 +71,10 @@ Seat Number	42D
 * shinjuku ulus gibi kaotik yemek gezmelik
 * meiji tapinak
 * shibuya sky fotoğraf için
+
+| TOKYO | Preview Image | Description |
+| :--- | :---: | :--- |
+| Tokyo Metropolitan Government Building Observatory | ![Smartphone](https://picsum.photos) | Ücretsiz. Shinjuku'da. Akşam git |
+| Godzilla head | ![Laptop](https://picsum.photos) | Kabukishoyu izleyen dev godzilla |
+| Hanazona Shrine | ![Camera](https://picsum.photos) | Huzurlu sakin tapınak. |
+|Shinjuku Golden Gai | ![Camera](https://picsum.photos) | Dar Sokaklar |
