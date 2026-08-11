@@ -66,8 +66,8 @@
 | :--- | :---: | :--- |
 | Osaka Castle | ![Osaka-Castle](images/osaka-castle.png) | Müze (ücretli) |
 | Dotonbori | ![Dotonbori](images/dotonbori.png) | Nehir cruise gezi |
-| Kuromon Ichiba Pazarı | ![](images/.png) |  |
-| Tennoji zoo | ![](images/.png) |  |
+| Kuromon Ichiba Pazarı | ![Kuromon](images/kuromon.png) | Alışveriş |
+| Tennoji zoo | ![Tennoji](images/tennoji.png) | Zoo |
 
 ~
 =====================================
@@ -76,9 +76,9 @@
 | :--- | :---: | :--- |
 | Nara Park | ![Nara-park](images/nara-park.png) | Geyik Parkı |
 | Todai-ji Temple | ![Todai-ji](images/todaiji.png) | Tapınak |
-| Kasuga Taisha | ![](images/.png) |  |
-| Kofuku-ji | ![](images/.png) |  |
-| Mount Wakakusa | ![](images/.png) |  |
-| Naramachi Old Town | ![](images/.png) |  |
-| Nara Prison Museum | ![](images/.png) |  |
-| Yashino Mountain | ![](images/.png) |  |
+| Kasuga Taisha | ![Kasuga](images/kasuga.png) | Tapınak |
+| Kofuku-ji | ![Kofuku](images/kofuku.png) | Tapınak |
+| Mount Wakakusa | ![Wakakusa](images/wakakusa.png) | Dağ |
+| Naramachi Old Town | ![Naramachi](images/naramachi.png) | Old Town Yürüyüş |
+| Nara Prison Museum | ![Prison-Museum](images/prison.png) | Müze |
+| Yoshinoyama Mountain | ![Yoshinoyama](images/yoshinoyama.png) | Dağ |
