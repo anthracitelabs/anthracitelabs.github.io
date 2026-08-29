@@ -82,3 +82,14 @@
 | Naramachi Old Town | ![Naramachi](images/naramachi.png) | Old Town Yürüyüş |
 | Nara Prison Museum | ![Prison-Museum](images/prison.png) | Müze |
 | Yoshinoyama Mountain | ![Yoshinoyama](images/yoshinoyama.png) | Dağ |
+
+## Retro Games 
+
+SNES Games
+-------------
+
+The Legend of Zelda: A Link to the Past
+Chrono Trigger
+Super Mario World
+Donkey Kong Country 2: Diddy's Kong Quest
+Mega Man X
