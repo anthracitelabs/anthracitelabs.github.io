@@ -118,3 +118,8 @@ Nintendo 64 console -
 * The Legend of Zelda: Ocarina of Time
 * Mario Kart 64
 * Super Mario 64
+
+Nintendo Switch game cartridges
+-------------------------------------
+* Nintendo Switch hardware is not region-locked for physical game cards, so a Japanese cartridge will work on any standard Switch console worldwide
+* Many Japanese cartridges include English or match your console's system language, but some titles (especially text-heavy RPGs or specific third-party games) only support Japanese. check the back of the physical game case for supported languages
