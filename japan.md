@@ -123,3 +123,11 @@ Nintendo Switch game cartridges
 -------------------------------------
 * Nintendo Switch hardware is not region-locked for physical game cards, so a Japanese cartridge will work on any standard Switch console worldwide
 * Many Japanese cartridges include English or match your console's system language, but some titles (especially text-heavy RPGs or specific third-party games) only support Japanese. check the back of the physical game case for supported languages
+
+🏷️ Condition Grading System (Look at the price tags!)
+------------------------------------------
+ * Rank S: Brand new / Mint in box
+ * Rank A: Pristine, minimal wear
+ * Rank B: Normal wear, small scratches
+ * Rank C: Heavy cosmetic damage, works fine
+ * ジャンク (Junk): Untested or broken (Buy at own risk!)
