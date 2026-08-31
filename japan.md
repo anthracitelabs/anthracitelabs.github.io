@@ -85,21 +85,30 @@
 
 ## Retro Games 
 
-Gameboy Color handheld with games
+Gameboy Color handheld with games (also fully compatible with Gameboy classic games)
 ----------------
 
-* Super Mario Bros. Deluxe
-* The Legend of Zelda: Link's Awakening DX
-* The Legend of Zelda: Oracle of Ages & Oracle of Seasons
+* Super Mario Land (GB)
+* Super Mario Land 2: Six Golden Coins (GB)
+* Super Mario Bros. Deluxe (GBC)
+* The Legend of Zelda: Link's Awakening DX (GBC)
+* The Legend of Zelda: Oracle of Ages & Oracle of Seasons (GBC)
 
-SNES (Super Famicom) console with Games
+SNES (Super Famicom) console with Games - must use original Sega Mega Drive Model 1 power supply (from the PAL/European region) in Turkiye 
 -------------
 
+* Street Fighter II Turbo: Hyper Fighting (1993)
 * The Legend of Zelda: A Link to the Past
-* Chrono Trigger Square
 * Super Mario World
 * Super Mario World Yoshi's Island
+* Chrono Trigger Square
 * Donkey Kong Country 2: Diddy's Kong Quest
 * Mega Man X
-* Street Fighter II Turbo: Hyper Fighting (1993)
 * Super Metroid
+
+Nintendo 64 console - must use European (PAL) Nintendo 64 power supply in Turkiye
+----------------------
+
+* The Legend of Zelda: Ocarina of Time
+* Mario Kart 64
+* Super Mario 64
