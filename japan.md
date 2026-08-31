@@ -85,7 +85,14 @@
 
 ## Retro Games 
 
-SNES Games
+Gameboy Color handheld with games
+----------------
+
+* Super Mario Bros. Deluxe
+* The Legend of Zelda: Link's Awakening DX
+* The Legend of Zelda: Oracle of Ages & Oracle of Seasons
+
+SNES (Super Famicom) console with Games
 -------------
 
 * The Legend of Zelda: A Link to the Past
