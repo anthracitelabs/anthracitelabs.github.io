@@ -89,8 +89,10 @@ SNES Games
 -------------
 
 * The Legend of Zelda: A Link to the Past
-* Chrono Trigger
+* Chrono Trigger Square
 * Super Mario World
+* Super Mario World Yoshi's Island
 * Donkey Kong Country 2: Diddy's Kong Quest
 * Mega Man X
 * Street Fighter II Turbo: Hyper Fighting (1993)
+* Super Metroid
