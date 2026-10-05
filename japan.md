@@ -131,3 +131,5 @@ Nintendo Switch game cartridges
  * Rank B: Normal wear, small scratches
  * Rank C: Heavy cosmetic damage, works fine
  * ジャンク (Junk): Untested or broken (Buy at own risk!)
+
+   [Retro game shops in Japan](https://thenavigatio.com/retro-game-shopping-in-tokyo-and-kyoto/)
