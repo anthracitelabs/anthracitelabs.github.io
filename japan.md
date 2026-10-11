@@ -96,10 +96,8 @@ Gameboy Color handheld with games (also fully compatible with Gameboy classic ga
 
 SNES (Super Famicom) console with Games 
 -------------
-
 * POWER: MUST USE ORIGINAL Sega Mega Drive Model 1 power supply (from the PAL/European region) in Turkiye
 * Video : needs an upscaler to convert from analog to HDMI/4K
-* 
 * Street Fighter II Turbo: Hyper Fighting (1993)
 * The Legend of Zelda: A Link to the Past
 * Super Mario World
@@ -111,10 +109,8 @@ SNES (Super Famicom) console with Games
 
 Nintendo 64 console - 
 ----------------------
-
 * POWER : must use European (PAL) Nintendo 64 power supply in Turkiye
 * Video : needs an upscaler to convert from analog to HDMI/4K
-* 
 * The Legend of Zelda: Ocarina of Time
 * Mario Kart 64
 * Super Mario 64
