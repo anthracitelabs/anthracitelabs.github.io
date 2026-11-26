@@ -9,7 +9,7 @@ First option is to discard local changes and overwrite. Second option is to keep
 </p>
 
 ## Option 1
-Suppose you have modifications in your local repo. And there are changes ready to be pulled from remote repo. Use this workflow if you want to <b>throw away your local edits<b> and make your local branch match the remote repository identically.
+Suppose you have modifications in your local repo. And there are changes ready to be pulled from remote repo. Use this workflow if you want to <b>throw away your local edits</b> and make your local branch match the remote repository identically.
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ shell
 git fetch origin	-- Fetch the latest remote state which means downloading the newest commits without attempting a merge
