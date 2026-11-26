@@ -14,8 +14,7 @@ Suppose you have modifications in your local repo. And there are changes ready t
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ shell
 git fetch origin	# Fetch the latest remote state which means downloading the newest commits without attempting a merge
 git checkout branch-name 	# Checkout the branch which you want to reset to the remote branch state.
-git reset --hard origin/<branch-name>	# (branch-name is like origin/main) Wipe out all uncommitted changes to tracked files and reset the current branch's head to the specified commit (in this case, the latest
-										# commit of the branch on the remote)
+git reset --hard origin/<branch-name>	# (branch-name is like origin/main) Wipe out all uncommitted changes to tracked files and reset the current branch's head to the specified commit (in this case, the latest commit of the branch on the remote)
 git clean -fd	# (Optional) Remove untracked files if you also want to delete newly created local files and folders that are not tracked by Git (-f means force and -d is for directories)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
